@@ -17,6 +17,7 @@ Site para a Empresa Júnior WATT produzido no PS 2019.2
 * [Node.js](https://nodejs.org) - Ambiente de execução para executar o JavaScript no lado do servidor;
 * [React](https://reactjs.org) - A biblioteca usada para criar a interface;
 * [Keystone.js](https://sass-lang.com/libsass) - O framework usado para o serviço de CMS;
+* [MongoDB](https://www.mongodb.com/) - O Banco de dados NoSQL usado para manter os dados;
 * [Heroku](https://www.heroku.com/platform) - A plataforma utilizada pra deploy.
 
 ## Autores
