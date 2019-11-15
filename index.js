@@ -1,12 +1,11 @@
-//import keystone
-var keystone = require('keystone');
+const keystone = require('keystone')
+const path = require('path')
 
-// Set up our keystone instance
 keystone.init({
   // The name of the KeystoneJS application
-  'name': 'Keystone CMS',
+  'name': 'WATT Consultoria',
   // Paths to our application static files
-  'static': [],
+  'static': [path.join(__dirname, '/public')],
   // Keystone includes an updates framework, 
   // which you can enable by setting the auto update option to true.
   // Updates provide an easy way to seed your database, 
@@ -23,10 +22,8 @@ keystone.init({
   'cookie secret': '6D61822FBEAED8635A4A52241FEC3',
 });
 
-// Load your project's Models
-keystone.import('./server/models');
+keystone.import('./server/models')
 
-// Add routes later
+keystone.set('routes', require('./server/routes'))
 
-// Start Keystone
-keystone.start();
+keystone.start()
