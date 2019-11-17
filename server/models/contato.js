@@ -2,7 +2,7 @@ const keystone = require('keystone');
 const Types = keystone.Field.Types;
 
 // First we gonna create our User list
-var Contato = new keystone.List('Contato', {
+const Contato = new keystone.List('Contato', {
   nocreate: true,
   nodelete: true
 });
