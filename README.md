@@ -8,9 +8,17 @@ Site para a Empresa Júnior WATT produzido no PS 2019.2
 ## Rodando o projeto localmente
 
 1. Primeiro você deve ter o `git`, o `node` e o `npm` instalados;
-2. Clone esse repositório e abra na pasta do projeto no seu terminal;
-3. Rode o comando `npm start` para inicar o projeto.
-4. Abra o browser, e navegue até esse link http://localhost:3000.
+2. Clone esse repositório e abra no terminal na pasta `frontend`;
+3. Rode o comando:
+    ##### No Linux
+      `npm run go-l`
+
+    ##### No Windows
+      `npm run go-w`
+
+
+4. Navegue até a pasta principal do projeto e rode o comando `npm start` para inicar o projeto;
+5. Abra o browser, e navegue até esse link http://localhost:3000.
 
 ## Feito com
 
@@ -41,5 +49,3 @@ Site para a Empresa Júnior WATT produzido no PS 2019.2
 * **Gabriel Kristian** - [gkqsj](https://github.com/gkqsj)
 * **Luana Nagai** - [nagailuana](https://www.behance.net/user/?username=nagailuana)
 * **Vituriano Xisto** - [Vituriano](https://github.com/Vituriano)
- 
- 
