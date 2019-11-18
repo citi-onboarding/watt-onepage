@@ -17,43 +17,38 @@ exports = module.exports = function (app) {
 	// envia o email
 	app.post('/contato', (req, res) => {
 		//baixa os dados
-		let body = '';
-		req.on('data', (data) => {
-			body += data;
+		const nome = req.body.nome
+		const email = req.body.email
+		const telefone = req.body.tel
+		const assunto = req.body.assunto
+		const mensagem = req.body.mensagem
+
+		const transporter = nodemailer.createTransport({
+			service: "gmail",
+			port: 587,
+			secure: false,
+			auth: {
+				user: "desafiopta@gmail.com",
+				pass: "Parede101"
+			},
+			tls: { rejectUnauthorized: false }
 		})
-		//após o download
-		req.on('end', () => {
-			//transformando em objeto
-			const nome = (JSON.parse(body).nome)
-			const email = (JSON.parse(body).email)
-			const assunto = (JSON.parse(body).assunto)
-			const mensagem = (JSON.parse(body).mensagem)
-			console.log(body)
-			const transporter = nodemailer.createTransport({
-				service: "gmail",
-				port: 587,
-				secure: false,
-				auth: {
-					user: "desafiopta@gmail.com",
-					pass: "Parede101"
-				},
-				tls: { rejectUnauthorized: false }
-			})
 
-			const mailOptions = {
-				from: `"${nome}" <${email}>`,
-				to: 'vox@cin.ufpe.br',
-				subject: assunto,
-				text: `${nome} <${email}>\n\n${mensagem}`
+		const mailOptions = {
+			from: `"${nome}" <${email}>`,
+			to: 'vox@cin.ufpe.br',
+			subject: assunto,
+			text: `${nome} <${email}> <${telefone}>\n\n${mensagem}`
+		}
+
+		transporter.sendMail(mailOptions, function (error) {
+			if (error) {
+				console.log(error)
+				res.send(error)
+			} else {
+				console.log('Email enviado');
+				res.send('Enviado')
 			}
-
-			transporter.sendMail(mailOptions, function (error) {
-				if (error) {
-					console.log(error)
-				} else {
-					console.log('Email enviado');
-				}
-			})
 		})
 	})
 }
