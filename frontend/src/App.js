@@ -19,17 +19,31 @@ class App extends Component {
       email: '',
       tel: '',
       assunto: '',
-      mensagem: ''
+      mensagem: '',
+      media_contato: '',
+      email_contato: '',
+      address_contato: '',
+      phone_contato: '',
+      imagem_contato: ''
     };
-    (async () => {
-      const res = await axios.get('http://localhost:3000/contato', {
-      }).then(function (response) {
-        console.log(response.data)
-        console.log(response.status)
-      })
-    })()
+
+
+  }
+  componentDidMount() {
+    this.callApi()
+      .then((response) => this.setState({
+        media_contato: response.data[0].media,
+        email_contato: response.data[0].email,
+        address_contato: response.data[0].address,
+        phone_contato: response.data[0].phone,
+        imagem_contato: response.data[0].imagens[0].url
+      }))
   }
 
+  callApi = async () => {
+    const response = await axios.get('http://localhost:3000/contato')
+    return response;
+  }
 
   handleNameChange(event) {
     this.setState({ name: event.target.value });
@@ -66,14 +80,14 @@ class App extends Component {
         mensagem: mensagem
       }).then(function (response) {
         if (response.status === 200) { alert("Enviado com sucesso") }
-        else { alert("Erro ao enviar, tente novamente mais tarde"+ response.status) }
+        else { alert("Erro ao enviar, tente novamente mais tarde" + response.status) }
       })
     })()
   }
 
   render() {
     const mystyle = {
-      backgroundImage: 'url(' + logo + ')',
+      backgroundImage: 'url(' + this.state.imagem_contato + ')',
       backgroundSize: 'cover',
       width: '100%',
       height: '100vh',
@@ -100,10 +114,10 @@ class App extends Component {
                 </div>
               </div>
               <div className="coluna" id="contato-info">
-                <small>@media</small>
-                <small>phone</small>
-                <small>email</small>
-                <small>endereço</small>
+                <small>{this.state.media_contato}</small>
+                <small>{this.state.phone_contato}</small>
+                <small>{this.state.email_contato}</small>
+                <small>{this.state.address_contato}</small>
               </div>
             </div>
           </div>

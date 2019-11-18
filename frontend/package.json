@@ -12,7 +12,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "server-l": "npm run build && mv ./build ../public",
+    "server-l": "rm -rf ../public && npm run build && mv ./build ../public",
     "server-w": "npm run build && move ./build ../public",
     "go-l": "npm install && npm run build && mv ./build ../public",
     "go-w": "npm install && npm run build && move ./build ../public"
