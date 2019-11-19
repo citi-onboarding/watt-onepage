@@ -14,7 +14,7 @@ class Contato extends Component {
     this.handleMesageChange = this.handleMesageChange.bind(this)
 
     this.state = {
-      name: '',
+      nome: '',
       email: '',
       tel: '',
       assunto: '',
@@ -43,7 +43,7 @@ class Contato extends Component {
   }
 
   handleNameChange(event) {
-    this.setState({ name: event.target.value });
+    this.setState({ nome: event.target.value });
   }
 
   handleEmailChange(event) {
@@ -62,8 +62,10 @@ class Contato extends Component {
   }
 
 
-  sendEmail() {
-    const nome = this.state.name;
+  sendEmail(e) {
+    alert("aguarde a confirmação")
+    e.preventDefault();
+    const nome = this.state.nome;
     const email = this.state.email;
     const tel = this.state.tel;
     const assunto = this.state.assunto;
@@ -87,34 +89,37 @@ class Contato extends Component {
       backgroundImage: 'url(' + this.state.imagem_contato + ')',
       backgroundSize: 'cover',
       width: '100%',
-      height: '100vh',
+      height: '120vh',
       display: 'flex',
-      alignItems: 'center',
     }
     return (
       <>
         <div style={mystyle}>
           <div className="back-fade">
-            <div className="coluna" id="form-contato">
-              <h1>Contato</h1>
-              <div className="linha">
-                <div id="id-contato" className="coluna id">
-                  <input name="nome" placeholder="Nome" onChange={this.handleNameChange} value={this.state.name} />
-                  <input name="email" placeholder="E-mail" type='email' onChange={this.handleEmailChange} value={this.state.email} />
-                  <input name="telefone" placeholder="Telefone" type='tel' onChange={this.handleTelChange} value={this.state.Tel} />
+            <div className="box">
+              <div className="coluna" id="form-contato">
+                <h1>Contato</h1>
+                <form onSubmit={this.sendEmail}>
+                  <div className="linha">
+                    <div id="id-contato" className="coluna id">
+                      <input required name="nome" placeholder="Nome" onChange={this.handleNameChange} value={this.state.name} />
+                      <input required name="email" placeholder="E-mail" type='email' onChange={this.handleEmailChange} value={this.state.email} />
+                      <input required name="telefone" placeholder="Telefone" type='tel' onChange={this.handleTelChange} value={this.state.Tel} />
 
-                  <input name="assunto" placeholder="Assunto" onChange={this.handleAssuntoChange} value={this.state.assunto} />
+                      <input required name="assunto" placeholder="Assunto" onChange={this.handleAssuntoChange} value={this.state.assunto} />
+                    </div>
+                    <div id="mes-contato" className="coluna">
+                      <textarea required name="mensagem" placeholder="Mensagem" cols="50" rows="11" onChange={this.handleMesageChange} value={this.state.mensagem}></textarea>
+                      <input id="button-contato" type="submit" value="Enviar" />
+                    </div>
+                  </div>
+                </form>
+                <div className="coluna" id="contato-info">
+                  <small>{this.state.media_contato}</small>
+                  <small>{this.state.phone_contato}</small>
+                  <small>{this.state.email_contato}</small>
+                  <small>{this.state.address_contato}</small>
                 </div>
-                <div id="mes-contato" className="coluna">
-                  <textarea name="mensagem" placeholder="Mensagem" cols="50" rows="11" onChange={this.handleMesageChange} value={this.state.mensagem}></textarea>
-                  <button id="button-contato" onClick={this.sendEmail}>Enviar</button>
-                </div>
-              </div>
-              <div className="coluna" id="contato-info">
-                <small>{this.state.media_contato}</small>
-                <small>{this.state.phone_contato}</small>
-                <small>{this.state.email_contato}</small>
-                <small>{this.state.address_contato}</small>
               </div>
             </div>
           </div>
