@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import Navbar from 'react-bootstrap/Navbar'
+import Nav from 'react-bootstrap/Nav'
 import './App.css';
 import Contato from './components/Contato/Contato'
 import Servicos from './components/Servicos/Servicos'

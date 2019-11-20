@@ -1,24 +1,78 @@
 .App {
-  text-align: center;
+  background-color: black;
 }
 
 .App-logo {
-  height: 40vmin;
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
 .App-link {
-  color: #09d3ac;
+}
+body{
+}
+.navBar{
+  display: flex;
+  position: fixed;
+  justify-content: space-between;
+  width: 100%;
+  height: 95px;
+  font-family: 'Bebas Neue', cursive;
+  color:  #ECEDED;
+  background-color: rgba(100, 100, 100, 0.63);
+}
+ul {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  font-size: 1.7rem;
+  margin-top: 30px;
+  margin-bottom: 19px;
+  margin-right: 40px;
+  padding-inline-start: 0;
+}
+
+li {
+  
+}
+
+li a {
+  color:  #ECEDED;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+}
+li a:hover {
+  color:  #ECEDED;
+  text-decoration: none;
+}
+.firstLogo{
+  margin-left: 15px;
+  padding-top: 17.5px;
+  padding-bottom: 17.5px;
+}
+.containerBox{
+  width: 37px;
+  height: 37px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ECEDED;
+  border-radius: 100px;
+}
+.icons{
+  color: white;
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
+.content{
+  padding-top: 100px;
+  font-family: 'Bebas Neue', cursive;
+  color: white;
+  font-size: 2.7rem;
 }
 
 .back-fade {
