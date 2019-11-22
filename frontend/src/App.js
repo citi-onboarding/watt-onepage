@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
-import Contato from './components/Contato'
+import Contato from './components/Contato/Contato'
+import Servicos from './components/Servicos/Servicos'
 
 class App extends Component {
   constructor(props) {
@@ -13,7 +14,8 @@ class App extends Component {
 
   render() {
     return (
-      <Contato />
+      <Servicos />
+      // <Contato />
     )
   }
 }
