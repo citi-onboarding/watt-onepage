@@ -31,8 +31,9 @@
 }
 
 .servicos h1 {
-    position: absolute;
+    /* position: absolute; */
     top: 10%;
+    margin-bottom: 5%;
     color: #606164;
 }
 
@@ -111,6 +112,8 @@
 
 .slick-prev,
 .slick-next {
+    float: left;
+    z-index: 5;
     font-weight: bold;
 
     position: absolute;
@@ -125,19 +128,26 @@
     transform: translate(0, -50%);
 
     cursor: pointer;
-    background: whitesmoke;
+    background: rgba(245, 245, 245, 0.534);
 
     border: none;
     outline: none;
 }
 
 .slick-prev:hover,
-.slick-prev:focus,
 .slick-next:hover,
+.slick-prev:focus,
 .slick-next:focus {
-    opacity: .75;
+    opacity: 1;
     color: transparent;
-    background: whitesmoke;
+    background: rgba(245, 245, 245, 0.794);
+}
+
+.slick-prev:active,
+.slick-next:active {
+    opacity: 1;
+    color: transparent;
+    background: rgb(255, 255, 255);
 }
 
 .slick-prev:before {
