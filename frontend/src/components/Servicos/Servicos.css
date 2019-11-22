@@ -3,27 +3,37 @@
     padding: 0;
 }
 
-body {
-    background: rgb(255, 0, 0);
-}
-
 .itens {
     width: 30%;
-    height: 400px;
-    background: rgb(153, 153, 153);
-    border: 1px solid rgb(65, 65, 65);
+    height: 450px;
+    /* border: 1px solid black; */
 }
 
-.itens h3 {
-    display: flex;
-    justify-content: center;
+.itens h2 {
+    padding: 20px 30px;
+    color: white;
+
+    /* color: #32417C;
+    color: #2D53A2;
+    color: #0561A8;
+    color: #167ABC;
+    color: #606164;
+    color: #929293;
+    color: #949183;
+    color: #C8C9C2;
+    color: #ECEDED; */
 
 }
 
 .servicos {
     width: 80%;
     margin: 0 auto;
-    background: blanchedalmond;
+}
+
+.servicos h1 {
+    position: absolute;
+    top: 10%;
+    color: #606164;
 }
 
 .back-fade {
@@ -97,4 +107,65 @@ body {
 .slick-dots li.slick-active button:before {
     opacity: .75;
     color: black;
+}
+
+.slick-prev,
+.slick-next {
+    font-weight: bold;
+
+    position: absolute;
+
+    display: block;
+
+    width: 30px;
+    height: 100%;
+    padding: 0;
+    -webkit-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+
+    cursor: pointer;
+    background: whitesmoke;
+
+    border: none;
+    outline: none;
+}
+
+.slick-prev:hover,
+.slick-prev:focus,
+.slick-next:hover,
+.slick-next:focus {
+    opacity: .75;
+    color: transparent;
+    background: whitesmoke;
+}
+
+.slick-prev:before {
+    content: '';
+    display: inline-block;
+    margin-top: 1.05em;
+    margin-left: 0.6em;
+    width: 0.8em;
+    height: 0.8em;
+    border-top: 0.2em solid #333;
+    border-right: 0.2em solid #333;
+    -moz-transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+    transform: rotate(-135deg);
+    color: #606164;
+}
+
+.slick-next:before {
+    content: '';
+    display: inline-block;
+    margin-top: 1.05em;
+    margin-left: -0.6em;
+    width: 0.8em;
+    height: 0.8em;
+    border-top: 0.2em solid #333;
+    border-right: 0.2em solid #333;
+    -moz-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    color: #606164;
 }

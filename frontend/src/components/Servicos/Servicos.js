@@ -31,39 +31,34 @@ class Servicos extends Component {
       ]
     };
     const mystyle = {
-      // backgroundImage: 'url(' + this.state.imagem_contato + ')',
+      // backgroundImage: 'url(' + this.state.imagem_servico + ')',
       // backgroundSize: 'cover',
       width: '100%',
       height: '120vh',
       display: 'flex',
+    }
+    const background = {
+      // backgroundImage: 'url(' + this.state.imagem_item + ')',
+      // backgroundSize: 'cover',
     }
     return (
       <div style={mystyle}>
         <div className="back-fade">
           <div className="box">
             <div className="servicos">
-              <h1>Servicos</h1>
+              <h1>SERVIÇOS</h1>
               <Slider {...settings}>
-                <div className="itens">
-                  <h3>1</h3>
+                <div className="itens" style={background}>
+                  <h2>Titulo do Serviço</h2>
                 </div>
-                <div className="itens">
-                  <h3>2</h3>
+                <div className="itens" style={background}>
+                  <h2>Titulo do Serviço</h2>
                 </div>
-                <div className="itens">
-                  <h3>3</h3>
+                <div className="itens" style={background}>
+                  <h2>Titulo do Serviço</h2>
                 </div>
-                <div className="itens">
-                  <h3>4</h3>
-                </div>
-                <div className="itens">
-                  <h3>5</h3>
-                </div>
-                <div className="itens">
-                  <h3>6</h3>
-                </div>
-                <div className="itens">
-                  <h3>7</h3>
+                <div className="itens" style={background}>
+                  <h2>Titulo do Serviço</h2>
                 </div>
               </Slider>
             </div>
