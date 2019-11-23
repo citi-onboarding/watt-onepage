@@ -1,15 +1,15 @@
 import React, {Component} from 'react';
-import Navbar from 'react-bootstrap/Navbar'
-import Nav from 'react-bootstrap/Nav'
-import face from './ícones/facebook-logo.svg'
-import linked from './ícones/linkedin (2).svg'
-import insta from './ícones/instagram (1).svg'
+import face from './ícones/facebook.png'
+import linked from './ícones/linkedin-(1).png'
+import insta from './ícones/instagram-(2).png'
 import WATTLogo from './WATTBRANCO.png'
+import background from './imagens/hossein-soltanloo-2ounD6ulngI-unsplash.jpg'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 
 class App extends Component {
 
+  
   handleClickServicos(){
 
     let elmnt = document.getElementById("Servicos");
@@ -37,18 +37,13 @@ class App extends Component {
 
   render(){
     return (
-      <div className="App">
-        {/* <Navbar sticky="top" position="fixed" bg="dark" variant="dark">
-          <img src={img} alt="WATT Consultoria" width="42" height="42"></img>
-          <Nav className="mr-auto">
-            <div className = "navItem">
-              <div onClick={()=> this.handleClickServicos()} >SERVIÇOS</div>
-              <div onClick={()=> this.handleClickSobre()} >SOBRE</div>
-              <div onClick={()=> this.handleClickContato()} >CONTATO</div>
-              <div href="http://wattconsultoria.com.br/blog/">BLOG</div>
-            </div>
-          </Nav>
-        </Navbar> */}
+      <div className="App" style={{
+        width: "100%",
+        height: "100%",
+        backgroundSize:"100%",
+        backgroundImage: "url(" + background + ")",
+        backgroundRepeat: "no-repeat"
+        }} >
 
         <div id="navBar" className="navBar" >
           <div id="logo" className="firstLogo" >
@@ -62,27 +57,27 @@ class App extends Component {
               <li><a href="http://wattconsultoria.com.br/blog/">BLOG</a></li>
               
               <li>
-                <div className="containerBox">
+                
                   <a href="https://www.instagram.com/wattconsultoria/" >
                     <img className="icons" src={insta} alt="Instagram"></img>
                   </a>
-                </div>
+                
               </li>
                 
               <li>
-                <div className="containerBox">
+                
                   <a href="https://www.linkedin.com/company/watt-consultoria" >
                     <img className="icons" src={linked} alt="LinkedIn"></img>
                   </a>
-                </div>
+                
               </li>
                   
               <li>
-                <div className="containerBox">
+                
                   <a href="https://www.facebook.com/WattConsultoria/" >
                     <img className="icons" src={face} alt="Facebook"></img>
                   </a>
-                </div>
+                
               </li>
               
 
