@@ -48,16 +48,16 @@ class Servicos extends Component {
             <div className="servicos">
               <h1>SERVIÇOS</h1>
               <Slider {...settings}>
-                <div className="itens" style={background}>
+                <div className="slide-item" style={background}>
                   <h2>Titulo do Serviço</h2>
                 </div>
-                <div className="itens" style={background}>
+                <div className="slide-item" style={background}>
                   <h2>Titulo do Serviço</h2>
                 </div>
-                <div className="itens" style={background}>
+                <div className="slide-item" style={background}>
                   <h2>Titulo do Serviço</h2>
                 </div>
-                <div className="itens" style={background}>
+                <div className="slide-item" style={background}>
                   <h2>Titulo do Serviço</h2>
                 </div>
               </Slider>

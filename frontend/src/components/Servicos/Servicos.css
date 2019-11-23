@@ -3,13 +3,13 @@
     padding: 0;
 }
 
-.itens {
+.slide-item {
     width: 30%;
     height: 450px;
     /* border: 1px solid black; */
 }
 
-.itens h2 {
+.slide-item h2 {
     padding: 20px 30px;
     color: white;
 
