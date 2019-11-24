@@ -38,7 +38,7 @@ class MyNavBar extends Component{
         return(
         <div id="navBar" className="navBar" >
           <div id="logo" className="firstLogo" >
-            <img src={WATTLogo} alt="WATT Consusltoria" height="60" width="60"></img>
+            <a href="/"><img src={WATTLogo} alt="WATT Consusltoria" height="60" width="60"></img></a>
           </div>
             <ul>
               
