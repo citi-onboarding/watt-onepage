@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
-import Contato from './components/Contato'
+import Contato from './components/Contato/Contato'
 
 class App extends Component {
   constructor(props) {
