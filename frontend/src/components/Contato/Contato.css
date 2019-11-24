@@ -1,6 +1,13 @@
 /*  GERAL */
+input {
+  outline: 0;
+}
 
-input, button, textarea {
+button {
+  outline: 0;
+}
+
+textarea {
   resize: none;
   outline: 0;
 }
@@ -10,10 +17,30 @@ input, button, textarea {
   flex-direction: row;
 }
 
+.contato-box {
+  display: flex;
+  flex-direction: row;
+}
+
 .coluna {
   display: flex;
   flex-direction: column;
   width: 50%;
+}
+
+.back-fade {
+  background: rgba(46, 46, 46, 0.37);
+  width: 100%;
+  height: 120vh;
+  display: flex;
+  align-items: flex-end;
+}
+
+.box {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
 }
 
 /* Coluna */
@@ -33,6 +60,13 @@ input, button, textarea {
 
 /* id's de contato */
 
+#contato {
+  background-size: cover;
+  width: 100%;
+  height: 120vh;
+  display: flex;
+}
+
 #contato-info {
   font-size: 18px;
   margin-top: 10px;
@@ -43,10 +77,10 @@ input, button, textarea {
   margin: 0 auto;
   width: 60%;
   color: white;
-  padding: 5px;;
+  padding: 5px;
 }
 
-#button-contato {
+.button-contato {
   padding: 15px 0;
   color: white;
   background: rgb(128, 106, 189);
@@ -56,11 +90,50 @@ input, button, textarea {
   cursor: pointer;
 }
 
-#button-contato:hover {
+.button-contato:hover {
   background: rgb(124, 92, 206);
 }
 
 
-#button-contato:active {
+.button-contato:active {
   background: rgb(66, 40, 133);
 }
+
+.btn-block{
+  cursor: not-allowed;
+  transition: all .3s ease-in;
+}
+
+@media (orientation: portrait)  and (max-width: 500px){
+  .contato-box {
+    flex-direction: column;
+  }
+
+  .coluna {
+    width: 100%;
+  }
+
+
+  #contato {
+    height: 130vh;
+  }
+
+  .back-fade {
+    height: 130vh;
+  }
+
+  .coluna input,
+  .coluna textarea {
+    margin-bottom: 10px;
+    padding: 10px;
+  }
+
+  #form-contato {
+    margin: 0 auto;
+    width: 90%;
+    color: white;
+    padding: 5px;
+  }
+}
+
+@media (orientation: portrait) and (max-width: 320px) {}
