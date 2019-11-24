@@ -1,0 +1,63 @@
+.App-logo {
+}
+  
+.App-header {
+}
+  
+.App-link {
+}
+body{
+}
+.navBar{
+    display: flex;
+    position: fixed;
+    justify-content: space-between;
+    width: 100%;
+    height: 95px;
+    font-family: 'Bebas Neue', cursive;
+    color:  #ECEDED;
+    background-color: rgba(100, 100, 100, 0.63);
+}
+ul {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    font-size: 1.7rem;
+    margin-top: 30px;
+    margin-bottom: 19px;
+    margin-right: 40px;
+    padding-inline-start: 0;
+}  
+li a {
+    color:  #ECEDED;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+}
+li a:hover {
+    color:  #ECEDED;
+    text-decoration: none;
+}
+.firstLogo{
+    margin-left: 15px;
+    padding-top: 17.5px;
+    padding-bottom: 17.5px;
+}
+.icons{
+    color: white;
+    width: 36px;
+    height: 36px;
+    object-fit: contain;
+}
+.colorPallete{
+  color:#32417C;
+  color:#2D53A2;
+  color:#0561A8;
+  color:#167ABC;
+  color:#606164;
+  color:#929293;
+  color:#949183;
+  color:#C8C9C2;
+  color:#ECEDED;
+}
