@@ -1,0 +1,25 @@
+footer{
+  width: 100%;
+  height: 5vh;
+  display: flex;
+  justify-content: flex-end;
+  background: rosybrown;
+}
+
+footer p {
+  display: flex;
+  align-items: center;
+  color: #000;
+}
+
+footer p span {
+  margin-left: 7px;
+  margin-right: 7px;
+}
+footer img {
+  width: 15pt;
+}
+
+footer p span:last-child img {
+  width: 25pt;
+}
