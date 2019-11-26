@@ -1,8 +1,4 @@
 import React, {Component} from 'react';
-import face from './ícones/facebook.png';
-import linked from './ícones/linkedin-(1).png';
-import insta from './ícones/instagram-(2).png';
-import WATTLogo from './WATTBRANCO.png';
 import MyNavBar from './components/MyNavBar/MyNavBar';
 import background from './imagens/hossein-soltanloo-2ounD6ulngI-unsplash.jpg';
 import './App.css';
