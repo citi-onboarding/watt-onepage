@@ -3,6 +3,7 @@ import './MyNavBar.css';
 import face from '../../ícones/facebook.png';
 import linked from '../../ícones/linkedin-(1).png';
 import insta from '../../ícones/instagram-(2).png';
+import menuIcon from '../../ícones/menu-24px.svg';
 import WATTLogo from '../../WATTBRANCO.png';
 
 class MyNavBar extends Component{
@@ -42,14 +43,15 @@ class MyNavBar extends Component{
           </div>
             <ul>
               
-              <li><a onClick={()=> this.handleClickServicos()} >SERVIÇOS</a></li>
-              <li><a onClick={()=> this.handleClickSobre()} >SOBRE</a></li>
-              <li><a onClick={()=> this.handleClickContato()} >CONTATO</a></li>
-              <li><a target="_blank" href="http://wattconsultoria.com.br/blog/">BLOG</a></li>
+              <li><a className="mediaDesk" onClick={()=> this.handleClickServicos()} >SERVIÇOS</a></li>
+              <li><a className="mediaDesk" onClick={()=> this.handleClickSobre()} >SOBRE</a></li>
+              <li><a className="mediaDesk" onClick={()=> this.handleClickContato()} >CONTATO</a></li>
+              <li><a className="mediaDesk" target="_blank" href="http://wattconsultoria.com.br/blog/">BLOG</a></li>
+              <li><a className="mediaMob" ><img color="#FFFFFF" src={menuIcon} alt="WATT Consusltoria" height="60" width="60"></img></a></li>
               
               <li>
                 
-                  <a href="https://www.instagram.com/wattconsultoria/" >
+                  <a className="mediaDesk" href="https://www.instagram.com/wattconsultoria/" >
                     <img className="icons" src={insta} alt="Instagram"></img>
                   </a>
                 
@@ -57,7 +59,7 @@ class MyNavBar extends Component{
                 
               <li>
                 
-                  <a href="https://www.linkedin.com/company/watt-consultoria" >
+                  <a className="mediaDesk" href="https://www.linkedin.com/company/watt-consultoria" >
                     <img className="icons" src={linked} alt="LinkedIn"></img>
                   </a>
                 
@@ -65,7 +67,7 @@ class MyNavBar extends Component{
                   
               <li>
                 
-                  <a href="https://www.facebook.com/WattConsultoria/" >
+                  <a className="mediaDesk" href="https://www.facebook.com/WattConsultoria/" >
                     <img className="icons" src={face} alt="Facebook"></img>
                   </a>
                 
