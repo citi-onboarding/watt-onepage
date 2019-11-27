@@ -53,15 +53,15 @@ class MyMobMenu extends Component{
                 
                 <div className="iconTable" >
                     <a href="https://www.instagram.com/wattconsultoria/" >
-                        <img className="icons" src={insta} alt="Instagram"></img>
+                        <img className="mobIcons" src={insta} alt="Instagram"></img>
                     </a>
                 
                     <a href="https://www.linkedin.com/company/watt-consultoria" >
-                        <img className="icons" src={linked} alt="LinkedIn"></img>
+                        <img className="mobIcons" src={linked} alt="LinkedIn"></img>
                     </a>
                 
                     <a href="https://www.facebook.com/WattConsultoria/" >
-                        <img className="icons" src={face} alt="Facebook"></img>
+                        <img className="mobIcons" src={face} alt="Facebook"></img>
                     </a>
                 </div>
             </div>

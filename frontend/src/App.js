@@ -20,9 +20,10 @@ class App extends Component {
         backgroundRepeat: "no-repeat"
         }} >
 
-        {/* <MyNavBar /> */}
-        <MyMobMenu />
-
+        <MyNavBar />
+        <div className="animation" >
+          <MyMobMenu />
+        </div>
         <div className = "content">  
           <a id="Servicos">Servicos</a>
           <br></br><br></br><br></br><br></br><br></br><br></br><br></br>
