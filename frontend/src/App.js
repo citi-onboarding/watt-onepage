@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import MyNavBar from './components/MyNavBar/MyNavBar';
+import MyMobMenu from './components/MyMobMenu/MyMobMenu';
 import background from './imagens/hossein-soltanloo-2ounD6ulngI-unsplash.jpg';
 import './App.css';
 import Contato from './components/Contato/Contato'
@@ -19,7 +20,8 @@ class App extends Component {
         backgroundRepeat: "no-repeat"
         }} >
 
-        <MyNavBar />
+        {/* <MyNavBar /> */}
+        <MyMobMenu />
 
         <div className = "content">  
           <a id="Servicos">Servicos</a>
