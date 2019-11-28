@@ -37,7 +37,8 @@ class MyMobMenu extends Component{
     if(document.getElementById('toBeAnimated').className =='animation'){
 
       document.getElementById('toBeAnimated').className ='animationOut';
-
+      setTimeout(function(){ document.getElementById('toBeAnimated').className ='animationNone'; }, 600);
+      
     }else{
       
       document.getElementById('toBeAnimated').className ='animation';

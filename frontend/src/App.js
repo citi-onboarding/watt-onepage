@@ -11,11 +11,8 @@ class App extends Component {
   constructor(props) {
     super(props)
 
-
+  }
   render(){
-
-
-
     return (
       <div className="App" style={{
         backgroundImage: `url(${background})`,
@@ -24,7 +21,7 @@ class App extends Component {
         }} >
 
         <MyNavBar />
-        <div id="toBeAnimated" className="animationOut" >
+        <div id="toBeAnimated" className="animationNone" >
           <MyMobMenu />
         </div>
         <div className = "content">  
