@@ -76,7 +76,7 @@ li a:hover {
     }
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 769px) {
     /* For desktop: */
     .mediaMob{
         display: none;
