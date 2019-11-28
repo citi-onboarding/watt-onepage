@@ -8,6 +8,9 @@ class App extends Component {
 
 
   render(){
+
+
+
     return (
       <div className="App" style={{
         backgroundImage: `url(${background})`,
@@ -16,7 +19,7 @@ class App extends Component {
         }} >
 
         <MyNavBar />
-        <div className="animation" >
+        <div id="toBeAnimated" className="animationOut" >
           <MyMobMenu />
         </div>
         <div className = "content">  

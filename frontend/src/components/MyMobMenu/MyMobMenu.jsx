@@ -33,7 +33,17 @@ class MyMobMenu extends Component{
       behavior: "smooth",
     });
   }
-  
+  animate(){
+    if(document.getElementById('toBeAnimated').className =='animation'){
+
+      document.getElementById('toBeAnimated').className ='animationOut';
+
+    }else{
+      
+      document.getElementById('toBeAnimated').className ='animation';
+    
+    }
+  }
 
     render(){
         return(
@@ -44,9 +54,9 @@ class MyMobMenu extends Component{
                 
                 <div className = "ulTable" >
                     
-                    <div className = "liTable" ><a onClick={()=> this.handleClickServicos()} >SERVIÇOS</a></div>
-                    <div className = "liTable" ><a onClick={()=> this.handleClickSobre()} >SOBRE</a></div>
-                    <div className = "liTable" ><a onClick={()=> this.handleClickContato()} >CONTATO</a></div>
+                    <div className = "liTable" ><a onClick={()=> {this.handleClickServicos();this.animate()}} >SERVIÇOS</a></div>
+                    <div className = "liTable" ><a onClick={()=> {this.handleClickSobre();this.animate()}} >SOBRE</a></div>
+                    <div className = "liTable" ><a onClick={()=> {this.handleClickContato();this.animate()}} >CONTATO</a></div>
                     <div className = "liTable" ><a target="_blank" href="http://wattconsultoria.com.br/blog/">BLOG</a></div>
                     
                 </div>
