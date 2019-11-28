@@ -31,13 +31,16 @@ class Contato extends Component {
   }
   componentDidMount() {
     this.callApi()
-      .then((response) => this.setState({
-        media_contato: response.data[0].media,
-        email_contato: response.data[0].email,
-        address_contato: response.data[0].address,
-        phone_contato: response.data[0].phone,
-        imagem_contato: response.data[0].imagens[0].url
-      }))
+      .then((response) => {
+        this.setState({
+          media_contato: response.data[0]['Mídia Social'],
+          email_contato: response.data[0].Email,
+          address_contato: response.data[0].Endereço,
+          phone_contato: response.data[0].Telefone,
+          imagem_contato: response.data[0].Imagem[0].url
+        })
+
+      })
   }
 
   callApi = async () => {
