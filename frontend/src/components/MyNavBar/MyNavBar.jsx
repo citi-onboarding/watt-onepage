@@ -19,6 +19,7 @@ class MyNavBar extends Component{
       behavior: "smooth",
     });
   }
+
   handleClickSobre(){
 
     let elmnt = document.getElementById("Sobre");
@@ -26,6 +27,7 @@ class MyNavBar extends Component{
       behavior: "smooth",
     });
   }
+  
   handleClickContato(){
 
     let elmnt = document.getElementById("Contato");
@@ -36,13 +38,9 @@ class MyNavBar extends Component{
   
   animate(){
     if(document.getElementById('toBeAnimated').className =='animation'){
-
       document.getElementById('toBeAnimated').className ='animationOut';
-
     }else{
-      
       document.getElementById('toBeAnimated').className ='animation';
-    
     }
   }
 
@@ -52,40 +50,33 @@ class MyNavBar extends Component{
           <div id="logo" className="firstLogo" >
             <a href="/"><img src={WATTLogo} alt="WATT Consusltoria" height="60" width="60"></img></a>
           </div>
-            <ul>
+          <ul>
+            
+            <li><a className="mediaDesk" onClick={()=> this.handleClickServicos()} >SERVIÇOS</a></li>
+            <li><a className="mediaDesk" onClick={()=> this.handleClickSobre()} >SOBRE</a></li>
+            <li><a className="mediaDesk" onClick={()=> this.handleClickContato()} >CONTATO</a></li>
+            <li><a className="mediaDesk" target="_blank" href="http://wattconsultoria.com.br/blog/">BLOG</a></li>
+            <li><a className="mediaMob" ><img onClick={()=> this.animate()} color="#FFFFFF" src={menuIcon} alt="WATT Consusltoria" height="60" width="60"></img></a></li>
+            
+            <li>
+              <a className="mediaDesk" href="https://www.instagram.com/wattconsultoria/" >
+                <img className="icons" src={insta} alt="Instagram"></img>
+              </a>
+            </li>
               
-              <li><a className="mediaDesk" onClick={()=> this.handleClickServicos()} >SERVIÇOS</a></li>
-              <li><a className="mediaDesk" onClick={()=> this.handleClickSobre()} >SOBRE</a></li>
-              <li><a className="mediaDesk" onClick={()=> this.handleClickContato()} >CONTATO</a></li>
-              <li><a className="mediaDesk" target="_blank" href="http://wattconsultoria.com.br/blog/">BLOG</a></li>
-              <li><a className="mediaMob" ><img onClick={()=> this.animate()} color="#FFFFFF" src={menuIcon} alt="WATT Consusltoria" height="60" width="60"></img></a></li>
-              
-              <li>
+            <li>
+              <a className="mediaDesk" href="https://www.linkedin.com/company/watt-consultoria" >
+                <img className="icons" src={linked} alt="LinkedIn"></img>
+              </a>
+            </li>
                 
-                  <a className="mediaDesk" href="https://www.instagram.com/wattconsultoria/" >
-                    <img className="icons" src={insta} alt="Instagram"></img>
-                  </a>
-                
-              </li>
-                
-              <li>
-                
-                  <a className="mediaDesk" href="https://www.linkedin.com/company/watt-consultoria" >
-                    <img className="icons" src={linked} alt="LinkedIn"></img>
-                  </a>
-                
-              </li>
-                  
-              <li>
-                
-                  <a className="mediaDesk" href="https://www.facebook.com/WattConsultoria/" >
-                    <img className="icons" src={face} alt="Facebook"></img>
-                  </a>
-                
-              </li>
-              
-
-            </ul>
+            <li>
+              <a className="mediaDesk" href="https://www.facebook.com/WattConsultoria/" >
+                <img className="icons" src={face} alt="Facebook"></img>
+              </a>
+            </li>
+          
+          </ul>
         </div>
         )
     }

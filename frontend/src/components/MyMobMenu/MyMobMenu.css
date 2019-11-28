@@ -8,9 +8,19 @@
     justify-content: space-around;
     flex-direction: column;
     font-family: 'Bebas Neue', cursive;
-    color:  #ECEDED;
     background-color: #167ABC;
     object-fit: contain;
+}
+.buttonWrapper{
+    position: fixed;
+    width: 100vw;
+}
+.fixedMobButton{
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 15px;
+    margin-top: 18px;
 }
 .ulTable {
     margin-top: 15vh;
@@ -74,7 +84,7 @@
     }
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 769px) {
     /* For desktop: */
     .mediaMob{
         display: none;
