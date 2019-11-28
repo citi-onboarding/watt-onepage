@@ -15,8 +15,10 @@ class App extends Component {
 
   render() {
     return (
-      <Footer />
-      // <Contato />
+      <>
+        <Contato />
+        <Footer />
+      </>
     )
   }
 }
