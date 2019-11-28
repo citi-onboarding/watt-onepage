@@ -3,7 +3,7 @@ const path = require('path')
 
 keystone.init({
   // The name of the KeystoneJS application
-  'name': 'WATT Consultoria',
+  'name': 'Admin - WATT Consultoria',
   'brand': "WATT Consultoria",
   'admin path': 'admin',
   // Paths to our application static files
@@ -32,9 +32,7 @@ keystone.set('routes', require('./server/routes'))
 
 keystone.set('nav', {
   'Usuários':['User'],
-  'Banner': [],
-  'Quem Somos': [],
-  'Contato': ['Contato']
+  'Página': ['Contato', 'Servicos']
 })
 
 keystone.start()

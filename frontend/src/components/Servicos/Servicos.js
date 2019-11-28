@@ -10,8 +10,10 @@ class Servicos extends Component {
     super(props)
 
     this.state = {
-
-    }
+      titulo: '',
+      descricao: '',
+      imagem: ''
+    };
   }
 
   render() {
