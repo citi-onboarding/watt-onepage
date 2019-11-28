@@ -34,6 +34,17 @@ class MyNavBar extends Component{
     });
   }
   
+  animate(){
+    if(document.getElementById('toBeAnimated').className =='animation'){
+
+      document.getElementById('toBeAnimated').className ='animationOut';
+
+    }else{
+      
+      document.getElementById('toBeAnimated').className ='animation';
+    
+    }
+  }
 
     render(){
         return(
@@ -47,7 +58,7 @@ class MyNavBar extends Component{
               <li><a className="mediaDesk" onClick={()=> this.handleClickSobre()} >SOBRE</a></li>
               <li><a className="mediaDesk" onClick={()=> this.handleClickContato()} >CONTATO</a></li>
               <li><a className="mediaDesk" target="_blank" href="http://wattconsultoria.com.br/blog/">BLOG</a></li>
-              <li><a className="mediaMob" ><img color="#FFFFFF" src={menuIcon} alt="WATT Consusltoria" height="60" width="60"></img></a></li>
+              <li><a className="mediaMob" ><img onClick={()=> this.animate()} color="#FFFFFF" src={menuIcon} alt="WATT Consusltoria" height="60" width="60"></img></a></li>
               
               <li>
                 
