@@ -59,19 +59,19 @@ class MyNavBar extends Component{
             <li><a className="mediaMob" ><img onClick={()=> this.animate()} color="#FFFFFF" src={menuIcon} alt="WATT Consusltoria" height="60" width="60"></img></a></li>
             
             <li>
-              <a className="mediaDesk" href="https://www.instagram.com/wattconsultoria/" >
+              <a className="mediaDesk" target="_blank" href="https://www.instagram.com/wattconsultoria/" >
                 <img className="icons" src={insta} alt="Instagram"></img>
               </a>
             </li>
               
             <li>
-              <a className="mediaDesk" href="https://www.linkedin.com/company/watt-consultoria" >
+              <a className="mediaDesk" target="_blank" href="https://www.linkedin.com/company/watt-consultoria" >
                 <img className="icons" src={linked} alt="LinkedIn"></img>
               </a>
             </li>
                 
             <li>
-              <a className="mediaDesk" href="https://www.facebook.com/WattConsultoria/" >
+              <a className="mediaDesk" target="_blank" href="https://www.facebook.com/WattConsultoria/" >
                 <img className="icons" src={face} alt="Facebook"></img>
               </a>
             </li>
