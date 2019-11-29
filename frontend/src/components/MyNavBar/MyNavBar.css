@@ -75,8 +75,37 @@ li a:hover {
         margin-right: 15px;
     }
 }
+@media only screen and (orientation: portrait) {
+    /* For mobile phones: */
+    .mediaMob{      
 
-@media only screen and (min-width: 769px) {
+    }
+    .mediaDesk{
+        display: none;
+    }
+    ul{
+        justify-content: flex-end;
+        margin: 17.5px;
+        margin-right: 15px;
+    }
+}
+
+@media only screen and (max-height: 414px) and (orientation: landscape) {
+    /* For mobile phones: */        
+    .mediaMob{
+        
+    }
+    .mediaDesk{
+        display: none;
+    }
+    ul{
+        justify-content: flex-end;
+        margin: 17.5px;
+        margin-right: 15px;
+    }
+
+}
+@media only screen and (min-height: 415px) and (min-width: 769px)  {
     /* For desktop: */
     .mediaMob{
         display: none;
