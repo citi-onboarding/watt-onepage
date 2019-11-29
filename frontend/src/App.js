@@ -1,10 +1,20 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 import MyNavBar from './components/MyNavBar/MyNavBar';
 import MyMobMenu from './components/MyMobMenu/MyMobMenu';
 import background from './imagens/hossein-soltanloo-2ounD6ulngI-unsplash.jpg';
 import './App.css';
+import Contato from './components/Contato/Contato'
+import Servicos from './components/Servicos/Servicos'
 
 class App extends Component {
+  constructor(props) {
+    super(props)
+
+    this.state = {
+
+    }
+  }
+  
   render(){
     return (
       <div className="App" style={{
@@ -27,8 +37,12 @@ class App extends Component {
           <a id="Contato">Contato</a>
           <br></br><br></br><br></br><br></br><br></br><br></br><br></br>
         </div>
+        <Servicos />
+        <Contato />
+        
       </div>
     );
+
   }
 }
 export default App;
