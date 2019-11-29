@@ -4,6 +4,7 @@ const path = require('path')
 keystone.init({
   // The name of the KeystoneJS application
   'name': 'WATT Consultoria',
+  'brand': "WATT Consultoria",
   'admin path': 'admin',
   // Paths to our application static files
   'static': [path.join(__dirname, '/public')],
@@ -15,6 +16,7 @@ keystone.init({
   'auto update': true,
   // The url for your MongoDB connection
   'mongo': 'mongodb://admin:admin@watt-shard-00-00-pwbop.mongodb.net:27017,watt-shard-00-01-pwbop.mongodb.net:27017,watt-shard-00-02-pwbop.mongodb.net:27017/test?ssl=true&replicaSet=WATT-shard-0&authSource=admin&retryWrites=true&w=majority',              
+  'cloudinary config': 'cloudinary://197373593799121:TRfuWXxmtBjStQy_tIj_Pb6OHVQ@dgrwbcebj',
   // Whether to enable built-in authentication for Keystone's Admin UI,
   'auth': true,
   // The key of the Keystone List for users, required if auth is set to true
@@ -26,5 +28,13 @@ keystone.init({
 keystone.import('./server/models')
 
 keystone.set('routes', require('./server/routes'))
+
+
+keystone.set('nav', {
+  'Usuários':['User'],
+  'Banner': [],
+  'Quem Somos': [],
+  'Contato': ['Contato']
+})
 
 keystone.start()

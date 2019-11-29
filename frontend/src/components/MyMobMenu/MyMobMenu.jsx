@@ -28,7 +28,7 @@ class MyMobMenu extends Component{
   }
   handleClickContato(){
 
-    let elmnt = document.getElementById("Contato");
+    let elmnt = document.getElementById("contato");
     elmnt.scrollIntoView({
       behavior: "smooth",
     });
