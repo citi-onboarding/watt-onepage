@@ -18,6 +18,8 @@
 .servicos {
     width: 80%;
     margin: 0 auto;
+    z-index: 0;
+    padding-top: 90px;
 }
 
 .servicos h1 {

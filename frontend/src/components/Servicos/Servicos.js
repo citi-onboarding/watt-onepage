@@ -46,7 +46,7 @@ class Servicos extends Component {
     return (
       <div style={mystyle}>
         <div className="back-fade">
-          <div className="box">
+          <div className="boxServicos">
             <div className="servicos">
               <h1>SERVIÇOS</h1>
               <Slider {...settings}>

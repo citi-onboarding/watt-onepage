@@ -11,11 +11,23 @@ class Banner extends Component {
     }
   }
 
+  handleClickServicos() {
+
+    let elmnt = document.querySelector('.boxServicos');
+    elmnt.scrollIntoView({
+      behavior: "smooth",
+    });
+  }
+
   render() {
     return (
       <div className="banner">
-        <img src={logo_watt} alt="Watt Consultoria" />
-        <button id="btn-banner" className="btn-banner"><div className="arrow-down"></div></button>
+        <div className="banner-container">
+          <img src={logo_watt} alt="Watt Consultoria" />
+          <button onClick={() => { this.handleClickServicos() }} id="btn-banner" className="btn-banner">
+            <div className="arrow-down"></div>
+          </button>
+        </div>
       </div>
     )
   }

@@ -1,0 +1,125 @@
+  /* aasasasasasasasasasasasasassasasasasasasasasasasasasasassasasasasasasasasasasasasasasasasasasasasasasasasasasasasasasasasasasasasasasasasasasasasasasasasasasasasasasasasasasasasasasasasasasasasassasasasasasaasasasaSASASASASASASASASASASAAASAAASASASASASASASAASSASASASASASASASASASASASASASASASASSASASASASASASASASASASASASASASSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSAASSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSASSSSASASASASASSASSASASASASASSASASASASASASASASASASASASASASASASASASASASASSASAsasasassasaasasasasasasasasasasasasasasasasasasasaasasaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaasssassasaassasaasassasasassasaassassasassasasasasasasasasasasasasasasasasasasasasasasasasasasasasaasasasasasasasasasasasasasasasasasasasasasassqwqwqwqwqwqwqwqwqwqwqwqwqwqwqwqwwqwqwqwqwqwqwqwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwqwqwqwqwqqqqqqqqqqqqqwqwqwqwqwqwqwqwqwqwwqwqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqwqwqwqwqwqwqwqwwwqqeqweqeqqweweqqwwqqwwqwweewewwewewewewewewewewewewewwewewewwewwwwwwwqwwwqqwqwqqqwqwqwqqwqwqwqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqwqqqwqwqwqwqwqwqwqwqwqwqwqwqwqwqwqwqwqwqwqwqwqwqwqwqwqwqwqwqwqwqwqwqwqwqwqwqwqwqwqwqwqwqwqwqwqwqwwqwqqwqwqwqwqwqwqwqwqwqwqwqwqwwqwqwqwqwqwqwqwqwqwqwqwqwqwqwqwqwqwqwqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwqwqwqwqwqw */
+.mobMenu{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    font-family: 'Bebas Neue', cursive;
+    background-color: #167ABC;
+    object-fit: contain;
+}
+.logoLandscape{
+    margin-left: 15px;
+}
+.casePortrait{
+    
+}
+.caseLandscape{
+    
+}
+.buttonWrapper{
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
+    width: 100vw;
+    z-index: 1;
+}
+.fixedMobButton{
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 15px;
+    margin-top: 18px;
+}
+.ulTable {
+    margin-top: 15vh;
+    margin-bottom: 15vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    list-style-type: none;
+    font-size: 2.7rem;
+    padding-inline-start: 0;
+}
+.liTable {
+    margin-top: 0.5vh;
+    margin-bottom: 0.5vh;
+}
+.liTable a{
+    color:  #ECEDED;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+}
+.firstMobLogo{
+    margin-top: 8vh;
+}
+.mobIcons{
+    color: white;
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+    margin-right: 5vw;
+    margin-left: 5vw;
+}
+.iconTable{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 30px;
+}
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    .mediaMob{
+        
+    }
+    .mediaDesk{
+        display: none;
+    }
+}
+@media only screen and (orientation: portrait) {
+    /* For mobile phones: */
+    .mediaMob{
+        
+    }
+    .mediaDesk{
+        display: none;
+    }
+}
+@media only screen and (max-height: 550px) and (orientation:landscape) {
+    /* For mobile phones: */
+    .mediaMob{
+        
+    }
+    .mediaDesk{
+        display: none;
+    }
+    .casePortrait{
+        display: none;
+    }
+    .caseLandscape{
+        
+    }
+    .buttonWrapper{
+        justify-content: space-between;
+    }
+    .ulTable{
+        width: 90vw;
+        margin-top: 33vh;
+        justify-content: space-around;
+        flex-direction: initial;
+    }
+}
+
+@media only screen and (min-height: 550px) and (min-width: 769px)  {
+    /* For desktop: */
+    .mediaMob{      
+        display: none;
+    }
+    .mediaDesk{
+    
+    }
+
+}
