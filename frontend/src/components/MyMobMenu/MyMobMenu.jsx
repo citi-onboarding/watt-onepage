@@ -12,24 +12,10 @@ class MyMobMenu extends Component{
     }
 
   
-    handleClickServicos(){
+    handleClickScroll(nameOfClass){
 
-      let elmnt = document.querySelector('.boxServicos');
+      let elmnt = document.querySelector(nameOfClass);
       elmnt.scrollIntoView({  
-        behavior: "smooth",
-      });
-    }
-    handleClickSobre(){
-  
-      let elmnt = document.getElementById("Sobre");
-      elmnt.scrollIntoView({
-        behavior: "smooth",
-      });
-    }
-    handleClickContato(){
-  
-      let elmnt = document.querySelector('.boxContato');
-      elmnt.scrollIntoView({
         behavior: "smooth",
       });
     }
@@ -57,14 +43,14 @@ class MyMobMenu extends Component{
           <div id="MobMenu" className="mobMenu" >     
 
             <div id="mobLogo" className="firstMobLogo" >
-              <a href="/"><img src={WATTLogoVetor} alt="WATT Consusltoria" height="60" width="160"></img></a>
+              <img onClick={()=>{window.scrollTo(0,0);this.animate()}} src={WATTLogoVetor} alt="WATT Consusltoria" height="60" width="160"></img>
             </div>
             
             <div className = "ulTable" >
                 
-              <div className = "liTable" ><a onClick={()=> {this.handleClickServicos();this.animate()}} >SERVIÇOS</a></div>
-              <div className = "liTable" ><a onClick={()=> {this.handleClickSobre();this.animate()}} >SOBRE</a></div>
-              <div className = "liTable" ><a onClick={()=> {this.handleClickContato();this.animate()}} >CONTATO</a></div>
+              <div className = "liTable" ><a onClick={()=> {this.handleClickScroll('.boxServicos');this.animate()}} >SERVIÇOS</a></div>
+              <div className = "liTable" ><a onClick={()=> {this.handleClickScroll('.boxSobre');this.animate()}} >SOBRE</a></div>
+              <div className = "liTable" ><a onClick={()=> {this.handleClickScroll('.boxContato');this.animate()}} >CONTATO</a></div>
               <div className = "liTable" ><a target="_blank" href="http://wattconsultoria.com.br/blog/">BLOG</a></div>
               
             </div>

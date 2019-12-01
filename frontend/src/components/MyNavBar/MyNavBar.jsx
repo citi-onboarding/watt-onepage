@@ -12,24 +12,10 @@ class MyNavBar extends Component{
     }
 
   
-    handleClickServicos(){
+    handleClickScroll(nameOfClass){
 
-      let elmnt = document.querySelector('.boxServicos');
+      let elmnt = document.querySelector(nameOfClass);
       elmnt.scrollIntoView({  
-        behavior: "smooth",
-      });
-    }
-    handleClickSobre(){
-  
-      let elmnt = document.getElementById("Sobre");
-      elmnt.scrollIntoView({
-        behavior: "smooth",
-      });
-    }
-    handleClickContato(){
-  
-      let elmnt = document.querySelector('.boxContato');
-      elmnt.scrollIntoView({
         behavior: "smooth",
       });
     }
@@ -46,13 +32,13 @@ class MyNavBar extends Component{
         return(
         <div id="navBar" className="navBar" >
           <div id="logo" className="firstLogo" >
-            <a ><img onClick={()=>{window.scrollTo(0,0)}} src={WATTLogo} alt="WATT Consusltoria" height="60" width="60"></img></a>
+            <img onClick={()=>{window.scrollTo(0,0)}} src={WATTLogo} alt="WATT Consusltoria" height="60" width="60"></img>
           </div>
           <ul>
             
-            <li><a className = "mediaDesk" onClick={()=> this.handleClickServicos()} >SERVIÇOS</a></li>
-            <li><a className = "mediaDesk" onClick={()=> this.handleClickSobre()} >SOBRE</a></li>
-            <li><a className = "mediaDesk" onClick={()=> this.handleClickContato()} >CONTATO</a></li>
+            <li><a className = "mediaDesk" onClick={()=> this.handleClickScroll('.boxServicos')} >SERVIÇOS</a></li>
+            <li><a className = "mediaDesk" onClick={()=> this.handleClickScroll('boxSobre')} >SOBRE NOS</a></li>
+            <li><a className = "mediaDesk" onClick={()=> this.handleClickScroll('.boxContato')} >CONTATO</a></li>
             <li><a className = "mediaDesk" target="_blank" href="http://wattconsultoria.com.br/blog/">BLOG</a></li>
             
             <li><div className = "littleMargin" ><a className="mediaMob" ><img onClick={()=> this.animate()} color="#FFFFFF" src={menuIcon} alt="WATT Consusltoria" height="60" width="60"></img></a></div></li>
