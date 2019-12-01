@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Slider from "react-slick";
-
+import axios from 'axios'
 import './Servicos.css';
 import "../../../node_modules/slick-carousel/slick/slick.css"
 import "../../../node_modules/slick-carousel/slick/slick-theme.css"
@@ -10,8 +10,21 @@ class Servicos extends Component {
     super(props)
 
     this.state = {
+      posts: ''
+    };
+  }
+  componentDidMount() {
+    this.callAPI()
+      .then((response) => {
+        this.setState({
+          posts: response.data
+        })
+      })
+  }
 
-    }
+  callAPI = async () => {
+    let response = await axios.get('http://localhost:3000/servicos');
+    return response;
   }
 
   render() {
@@ -31,35 +44,28 @@ class Servicos extends Component {
       ]
     };
     const mystyle = {
-      // backgroundImage: 'url(' + this.state.imagem_servico + ')',
-      // backgroundSize: 'cover',
       width: '100%',
       height: '120vh',
       display: 'flex',
     }
-    const background = {
-      // backgroundImage: 'url(' + this.state.imagem_item + ')',
-      // backgroundSize: 'cover',
-    }
+
+    const { posts } = this.state;
     return (
-      <div style={mystyle}>
+      <div style={mystyle} >
+        {console.log(this.state.posts[1])}
         <div className="back-fade">
           <div className="box">
             <div className="servicos">
               <h1>SERVIÇOS</h1>
               <Slider {...settings}>
-                <div className="slide-item" style={background}>
-                  <h2>Titulo do Serviço</h2>
-                </div>
-                <div className="slide-item" style={background}>
-                  <h2>Titulo do Serviço</h2>
-                </div>
-                <div className="slide-item" style={background}>
-                  <h2>Titulo do Serviço</h2>
-                </div>
-                <div className="slide-item" style={background}>
-                  <h2>Titulo do Serviço</h2>
-                </div>
+                {posts && posts.map((post) => {
+                  return (
+                    <div className="slide-item">
+                      <h2>{post['Título']}</h2>
+                      <img src={post.imagens[0].url} />
+                    </div>
+                  )
+                })}
               </Slider>
             </div>
           </div>

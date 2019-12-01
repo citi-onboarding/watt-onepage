@@ -14,8 +14,10 @@ class App extends Component {
 
   render() {
     return (
-      <Servicos />
-      // <Contato />
+      <>
+        <Servicos />
+        <Contato />
+      </>
     )
   }
 }
