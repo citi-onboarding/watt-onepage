@@ -3,6 +3,7 @@ const cors = require('cors')
 const nodemailer = require('nodemailer');
 
 const apiContato = require('../views/contato');
+const apiQuemSomos = require('../views/QuemSomos');
 const apiServicos = require('../views/servicos');
 
 exports = module.exports = function (app) {
@@ -15,6 +16,7 @@ exports = module.exports = function (app) {
 	//envia os dados do banco
 	app.get('/contato', apiContato.getContato)
 	app.get('/servicos', apiServicos.getServicos)
+	app.get('/quemsomos', apiQuemSomos.getQuemSomos)
 
 	// envia o email
 	app.post('/contato', (req, res) => {
