@@ -46,15 +46,16 @@ class MyNavBar extends Component{
         return(
         <div id="navBar" className="navBar" >
           <div id="logo" className="firstLogo" >
-            <a href="/"><img src={WATTLogo} alt="WATT Consusltoria" height="60" width="60"></img></a>
+            <a ><img onClick={()=>{window.scrollTo(0,0)}} src={WATTLogo} alt="WATT Consusltoria" height="60" width="60"></img></a>
           </div>
           <ul>
             
-            <li><a className="mediaDesk" onClick={()=> this.handleClickServicos()} >SERVIÇOS</a></li>
-            <li><a className="mediaDesk" onClick={()=> this.handleClickSobre()} >SOBRE</a></li>
-            <li><a className="mediaDesk" onClick={()=> this.handleClickContato()} >CONTATO</a></li>
-            <li><a className="mediaDesk" target="_blank" href="http://wattconsultoria.com.br/blog/">BLOG</a></li>
-            <li><a className="mediaMob" ><img onClick={()=> this.animate()} color="#FFFFFF" src={menuIcon} alt="WATT Consusltoria" height="60" width="60"></img></a></li>
+            <li><a className = "mediaDesk" onClick={()=> this.handleClickServicos()} >SERVIÇOS</a></li>
+            <li><a className = "mediaDesk" onClick={()=> this.handleClickSobre()} >SOBRE</a></li>
+            <li><a className = "mediaDesk" onClick={()=> this.handleClickContato()} >CONTATO</a></li>
+            <li><a className = "mediaDesk" target="_blank" href="http://wattconsultoria.com.br/blog/">BLOG</a></li>
+            
+            <li><div className = "littleMargin" ><a className="mediaMob" ><img onClick={()=> this.animate()} color="#FFFFFF" src={menuIcon} alt="WATT Consusltoria" height="60" width="60"></img></a></div></li>
             
             <li>
               <a className="mediaDesk" target="_blank" href="https://www.instagram.com/wattconsultoria/" >
