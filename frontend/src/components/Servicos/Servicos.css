@@ -12,6 +12,7 @@
 .slide-item h2 {
     padding: 20px 30px;
     color: white;
+    font-size: 1em;
 }
 
 .servicos {
@@ -103,10 +104,10 @@
 .slick-next {
     float: left;
     z-index: 5;
+    content: '';
     font-weight: bold;
 
     position: absolute;
-
     display: block;
 
     width: 30px;
@@ -167,4 +168,24 @@
     -webkit-transform: rotate(45deg);
     transform: rotate(45deg);
     color: #606164;
+}
+
+@media(max-width: 1024px) {
+
+    .slick-dots li {
+        width: 20px;
+        height: 10px;
+        margin: 0 10px;
+    }
+
+    .slick-dots li button {
+        width: 20px;
+        height: 10px;
+        padding: 5px;
+    }
+
+    .slick-dots li button:before {
+        width: 20px;
+        height: 10px;
+    }
 }
