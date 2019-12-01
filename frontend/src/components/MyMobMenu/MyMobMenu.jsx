@@ -49,7 +49,7 @@ class MyMobMenu extends Component{
             <div className = "ulTable" >
                 
               <div className = "liTable" ><a onClick={()=> {this.handleClickScroll('.boxServicos');this.animate()}} >SERVIÇOS</a></div>
-              <div className = "liTable" ><a onClick={()=> {this.handleClickScroll('.boxSobre');this.animate()}} >SOBRE</a></div>
+              <div className = "liTable" ><a onClick={()=> {this.handleClickScroll('.boxSobre');this.animate()}} >SOBRE NÓS</a></div>
               <div className = "liTable" ><a onClick={()=> {this.handleClickScroll('.boxContato');this.animate()}} >CONTATO</a></div>
               <div className = "liTable" ><a target="_blank" href="http://wattconsultoria.com.br/blog/">BLOG</a></div>
               
