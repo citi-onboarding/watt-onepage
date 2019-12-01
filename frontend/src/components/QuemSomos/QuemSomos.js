@@ -13,9 +13,6 @@ class QuemSomos extends Component {
   render() {
     return (
       <div className="somos-container">
-        <svg className="top" viewBox="0 0 500 60">
-          <polygon points="0,0 250,40 500,0 500,40 0,40" />
-        </svg>
         <div className="quemSomos">
           <h1>Quem Somos</h1>
           <div className='image'><img src="https://st4.depositphotos.com/2783505/19978/i/1600/depositphotos_199786170-stock-photo-professor-teaching-web-design-group.jpg" /></div>
@@ -27,9 +24,6 @@ class QuemSomos extends Component {
             Qual é a musicamm? Ma vale dérreaisam? Mah você não consegue né Moisés? Você não consegueam. É com você Lombardiam. Boca sujuam... sem vergonhuamm. Ma você está certo dissoam?
           </p>
         </div>
-        <svg className="bottom" viewBox="0 0 500 60">
-          <polygon points="0,0 500,0 0,60" />
-        </svg>
       </div>
     )
   }

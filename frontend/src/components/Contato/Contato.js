@@ -146,7 +146,10 @@ class Contato extends Component {
       <>
         <ReactNotification />
         <div id='contato' style={mystyle}>
-          <div className="back-fade">
+          <svg className="top" viewBox="0 0 500 60">
+            <polygon points="0,0 500,0 0,60" />
+          </svg>
+          <div className="contato-back-fade">
             <div className="boxContato">
               <div className="coluna" id="form-contato">
                 <h1>Contato</h1>
