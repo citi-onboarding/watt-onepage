@@ -11,7 +11,6 @@ import './App.css';
 class App extends Component {
   constructor(props) {
     super(props)
-
   }
   render(){
     return (
@@ -26,9 +25,11 @@ class App extends Component {
           <MyMobMenu />
         </div>
         <div className = "content">  
+          <Banner/>
           <Servicos />
           <Contato />
         </div>
+        <Footer/>
         
       </div>
     );
