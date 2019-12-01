@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import Contato from './components/Contato/Contato'
 import Servicos from './components/Servicos/Servicos'
+import Footer from './components/Footer/Footer'
 import Banner from './components/Banner/Banner'
 class App extends Component {
   constructor(props) {
@@ -15,10 +16,11 @@ class App extends Component {
   render() {
     return (
       <>
-      <Banner />
-      <Servicos />
-      <Contato />
-    </>
+        <Banner />
+        <Servicos />
+        <Contato />
+        <Footer />
+      </>
     )
   }
 }
