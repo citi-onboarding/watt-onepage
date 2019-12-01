@@ -11,30 +11,28 @@ class MyNavBar extends Component{
         super(props);
     }
 
-      
-  handleClickServicos(){
-
-    let elmnt = document.getElementById("Servicos");
-    elmnt.scrollIntoView({
-      behavior: "smooth",
-    });
-  }
-
-  handleClickSobre(){
-
-    let elmnt = document.getElementById("Sobre");
-    elmnt.scrollIntoView({
-      behavior: "smooth",
-    });
-  }
   
-  handleClickContato(){
+    handleClickServicos(){
 
-    let elmnt = document.getElementById("Contato");
-    elmnt.scrollIntoView({
-      behavior: "smooth",
-    });
-  }
+      let elmnt = document.querySelector('.boxServicos');
+      elmnt.scrollIntoView({  
+        behavior: "smooth",
+      });
+    }
+    handleClickSobre(){
+  
+      let elmnt = document.getElementById("Sobre");
+      elmnt.scrollIntoView({
+        behavior: "smooth",
+      });
+    }
+    handleClickContato(){
+  
+      let elmnt = document.querySelector('.boxContato');
+      elmnt.scrollIntoView({
+        behavior: "smooth",
+      });
+    }
   
   animate(){
     if(document.getElementById('toBeAnimated').className =='animation'){

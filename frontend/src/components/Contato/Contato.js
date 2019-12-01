@@ -147,7 +147,7 @@ class Contato extends Component {
         <ReactNotification />
         <div id='contato' style={mystyle}>
           <div className="back-fade">
-            <div className="box">
+            <div className="boxContato">
               <div className="coluna" id="form-contato">
                 <h1>Contato</h1>
                 <form onSubmit={this.sendEmail}>
