@@ -33,11 +33,11 @@ class Contato extends Component {
     this.callApi()
       .then((response) => {
         this.setState({
-          media_contato: response.data[0]['Mídia Social'],
+          media_contato: response.data[0].Media,
           email_contato: response.data[0].Email,
-          address_contato: response.data[0].Endereço,
+          address_contato: response.data[0].Address,
           phone_contato: response.data[0].Telefone,
-          imagem_contato: response.data[0].Imagem[0].url
+          imagem_contato: response.data[0].Imagens[0].url
         })
 
       })
