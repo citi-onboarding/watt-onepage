@@ -5,6 +5,7 @@
 
 .banner-container {
   height: calc(100vh - 55px);
+  padding-top: 55px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;

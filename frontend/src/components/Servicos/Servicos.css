@@ -2,11 +2,39 @@
     margin: 0;
     padding: 0;
 }
+.slick-slider{
+    z-index: 0;
+}
+svg {
+    position: absolute;
+}
+
+#servicos {
+    position: relative;
+}
+
+.bottom {
+    bottom: 0px;
+    fill: white;
+    max-width: 100vw;
+}
 
 .slide-item {
-    width: 30%;
+    width: 100%;
     height: 450px;
-    /* border: 1px solid black; */
+    overflow: hidden;
+    outline: none;
+    position: relative;
+}
+
+.slide-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    filter: brightness(80%);
 }
 
 .slide-item h2 {
@@ -17,13 +45,14 @@
 
 .servicos {
     width: 80%;
-    margin: 0 auto;
-    z-index: 0;
-    padding-top: 90px;
+    margin: 100px auto;
+    background: transparent;
+    margin-bottom: 15%;
+    padding-top: 55px;
+    margin-top: -55px;
 }
 
 .servicos h1 {
-    /* position: absolute; */
     top: 10%;
     margin-bottom: 5%;
     color: #606164;
@@ -106,15 +135,15 @@
 .slick-next {
     float: left;
     z-index: 5;
-    content: '';
     font-weight: bold;
-
     position: absolute;
-    display: block;
+    bottom: 0;
+    margin-top: -2px;
 
+    display: block;
     width: 30px;
-    height: 100%;
-    padding: 0;
+    height: 450px;
+    padding: 0px;
     -webkit-transform: translate(0, -50%);
     -ms-transform: translate(0, -50%);
     transform: translate(0, -50%);
@@ -124,6 +153,14 @@
 
     border: none;
     outline: none;
+}
+
+.slick-next {
+    right: 0px;
+}
+
+.slick-prev {
+    left: 0px;
 }
 
 .slick-prev:hover,

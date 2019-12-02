@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import axios from 'axios'
 
 import './QuemSomos.css';
-
+import axios from 'axios'
 class QuemSomos extends Component {
   constructor(props) {
     super(props)
