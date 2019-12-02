@@ -15,7 +15,7 @@ class QuemSomos extends Component {
     this.callApi()
       .then((response) => {
         this.setState({
-          imagem: response.data[0].imagem[0],
+          imagem: response.data[0].imagem[0].url,
           post: response.data[0]['Texto'],
         })
 
