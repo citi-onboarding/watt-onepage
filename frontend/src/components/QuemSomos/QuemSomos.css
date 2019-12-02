@@ -1,21 +1,6 @@
 .somos-container {
   position: relative;
-}
-
-svg {
-  position: absolute;
-}
-
-.top {
-  top: -120px;
-  fill: purple;
-  max-width: 100vw;
-}
-
-.bottom {
-  bottom: -160px;
-  fill: purple;
-  max-width: 100vw;
+  background: white;
 }
 
 .quemSomos {
