@@ -10,6 +10,7 @@
     font-family: 'Bebas Neue', cursive;
     background-color: #167ABC;
     object-fit: contain;
+    z-index: 2;
 }
 .logoLandscape{
     margin-left: 15px;
@@ -25,7 +26,7 @@
     justify-content: flex-end;
     position: fixed;
     width: 100vw;
-    z-index: 1;
+    z-index: 3;
 }
 .fixedMobButton{
     position: relative;

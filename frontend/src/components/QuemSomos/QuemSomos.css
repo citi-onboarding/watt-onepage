@@ -9,7 +9,7 @@
   justify-content: center;
   margin: 0 auto;
   width: 90%;
-  padding: 15% 0;
+  padding: 9% 0;
   position: relative;
 }
 
@@ -56,4 +56,9 @@
     padding-bottom: 50px;
     margin: 0 auto;
   }
+
+  
+.quemSomos {
+  padding: 14% 0;
+}
 }

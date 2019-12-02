@@ -25,10 +25,10 @@ class Banner extends Component {
     return response;
   }
 
-  handleClickServicos() {
+  handleClickScroll(nameOfClass){
 
-    let elmnt = document.querySelector('.boxServicos');
-    elmnt.scrollIntoView({
+    let elmnt = document.querySelector(nameOfClass);
+    elmnt.scrollIntoView({  
       behavior: "smooth",
     });
   }
@@ -41,7 +41,7 @@ class Banner extends Component {
     return (
       <div style={mystyle} className="banner">
         <img src={logo_watt} alt="Watt Consultoria" />
-        <button onClick={() => { this.handleClickServicos() }} id="btn-banner" className="btn-banner">
+        <button onClick={() => { this.handleClickScroll('.servicos') }} id="btn-banner" className="btn-banner">
           <div className="arrow-down"></div>
         </button>
       </div>
