@@ -32,7 +32,7 @@ class MyNavBar extends Component {
     return (
       <div id="navBar" className="navBar" >
         <div id="logo" className="firstLogo" >
-          <img onClick={() => { window.scrollTo(0, 0) }} src={WATTLogo} alt="WATT Consusltoria" height="60" width="60"></img>
+          <img onClick={() => { window.scrollTo(0, 0) }} src={WATTLogo} alt="WATT Consusltoria" height="60" width="60" />
         </div>
         <ul>
 

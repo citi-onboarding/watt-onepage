@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import axios from 'axios'
+
 import './QuemSomos.css';
 
 class QuemSomos extends Component {
