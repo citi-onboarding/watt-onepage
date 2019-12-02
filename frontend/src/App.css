@@ -125,3 +125,6 @@ html {
   display: flex;
   align-items: center;
 }
+.box{
+  position: relative;
+}

@@ -43,18 +43,11 @@ class Servicos extends Component {
         }
       ]
     };
-    const mystyle = {
-      width: '100%',
-      height: '120vh',
-      display: 'flex',
-    }
-
     const { posts } = this.state;
     return (
-      <div style={mystyle} >
-        {console.log(this.state.posts[1])}
-        <div className="back-fade">
-          <div className="box">
+      <>
+        <div id="servicos">
+          <div className="back-fade">
             <div className="servicos">
               <h1>SERVIÇOS</h1>
               <Slider {...settings}>
@@ -68,9 +61,12 @@ class Servicos extends Component {
                 })}
               </Slider>
             </div>
+            <svg className="bottom" viewBox="0 0 500 60">
+              <polygon points="0,0 250,60 500,0 500,60 0,60" />
+            </svg>
           </div>
         </div>
-      </div>
+      </>
     );
   }
 }

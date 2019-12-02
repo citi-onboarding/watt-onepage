@@ -3,6 +3,20 @@
     padding: 0;
 }
 
+svg {
+    position: absolute;
+}
+
+#servicos {
+    position: relative;
+}
+
+.bottom {
+    bottom: 0px;
+    fill: white;
+    max-width: 100vw;
+}
+
 .slide-item {
     width: 100%;
     height: 450px;
@@ -29,8 +43,9 @@
 
 .servicos {
     width: 80%;
-    margin: 0 auto;
+    margin: 100px auto;
     background: transparent;
+    margin-bottom: 15%;
 }
 
 .servicos h1 {
