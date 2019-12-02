@@ -32,7 +32,7 @@ keystone.set('routes', require('./server/routes'))
 
 keystone.set('nav', {
   'Usuários':['User'],
-  'Página': ['Contato', 'Servicos']
+  'Página': ['Contato', 'Servicos', 'Banner']
 })
 
 keystone.start()
