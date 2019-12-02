@@ -23,7 +23,7 @@ class QuemSomos extends Component {
   }
 
   callApi = async () => {
-    const response = await axios.get('http://localhost:3000/quemsomos')
+    const response = await axios.get('https://watt-onepage.heroukuapp.com/quemsomos')
     return response;
   }
 

@@ -23,7 +23,7 @@ class Servicos extends Component {
   }
 
   callAPI = async () => {
-    let response = await axios.get('http://localhost:3000/servicos');
+    let response = await axios.get('https://watt-onepage.heroukuapp.com/servicos');
     return response;
   }
 

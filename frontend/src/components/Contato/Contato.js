@@ -44,7 +44,7 @@ class Contato extends Component {
   }
 
   callApi = async () => {
-    const response = await axios.get('http://localhost:3000/contato')
+    const response = await axios.get('https://watt-onepage.heroukuapp.com/contato')
     return response;
   }
 
@@ -77,7 +77,7 @@ class Contato extends Component {
     const mensagem = this.state.mensagem;
     (async () => {
       try {
-        const res = await axios.post('http://localhost:3000/contato', {
+        const res = await axios.post('https://watt-onepage.heroukuapp.com/contato', {
           nome: nome,
           email: email,
           tel: tel,
