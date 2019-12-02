@@ -25,14 +25,13 @@ class App extends Component {
         <div id="toBeAnimated" className="animationNone" >
           <MyMobMenu />
         </div>
-        <div className="content">
-          <Banner />
+        <div className = "content">
+          <Banner/>
           <Servicos />
           <QuemSomos />
           <Contato />
         </div>
         <Footer />
-
       </div>
     );
   }
