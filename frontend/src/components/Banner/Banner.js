@@ -11,7 +11,7 @@ class Banner extends Component {
     }
   }
   callApi = async () => {
-    const response = await axios.get('https://watt-onepage.heroukuapp.com/banner')
+    const response = await axios.get('https://watt-onepage.herokuapp.com/banner')
     return response;
   }
 
