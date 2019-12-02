@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './QuemSomos.css';
-
+import axios from 'axios'
 class QuemSomos extends Component {
   constructor(props) {
     super(props)
