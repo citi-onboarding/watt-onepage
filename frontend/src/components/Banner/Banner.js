@@ -6,16 +6,19 @@ import './Banner.css'
 class Banner extends Component {
   constructor(props) {
     super(props)
+    this.state = {
+      imagem_banner: ''
+    }
   }
   callApi = async () => {
     const response = await axios.get('http://localhost:3000/banner')
     return response;
   }
 
-  handleClickScroll(nameOfClass){
+  handleClickScroll(nameOfClass) {
 
     let elmnt = document.querySelector(nameOfClass);
-    elmnt.scrollIntoView({  
+    elmnt.scrollIntoView({
       behavior: "smooth",
     });
   }
