@@ -6,19 +6,6 @@ import './Banner.css'
 class Banner extends Component {
   constructor(props) {
     super(props)
-
-    this.state = {
-      imagem_banner: ''
-    }
-  }
-  componentDidMount() {
-    this.callApi()
-      .then((response) => {
-        this.setState({
-          imagem_banner: response.data[0].imagens[0].url
-        })
-
-      })
   }
   callApi = async () => {
     const response = await axios.get('http://localhost:3000/banner')

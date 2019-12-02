@@ -120,6 +120,9 @@ html {
   display: flex;
   align-items: center;
 }
-.box{
-  position: relative;
+
+.back-banner {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
