@@ -1,3 +1,14 @@
+svg {
+  position: absolute;
+}
+
+.top {
+  top: 0px;
+  fill: white;
+  max-width: 100vw;
+}
+
+
 /*  GERAL */
 input {
   outline: 0;
@@ -28,17 +39,16 @@ textarea {
   width: 50%;
 }
 
-.back-fade {
+.contato-back-fade {
   background: rgba(46, 46, 46, 0.37);
   width: 100%;
-  height: 120vh;
+  padding-top: 200px;
   display: flex;
   align-items: flex-end;
 }
 
 .box {
   width: 100%;
-  height: 100vh;
   display: flex;
   align-items: center;
 }
@@ -63,7 +73,7 @@ textarea {
 #contato {
   background-size: cover;
   width: 100%;
-  height: 120vh;
+  position: relative;
   display: flex;
 }
 
@@ -98,27 +108,18 @@ textarea {
   background: rgb(66, 40, 133);
 }
 
-.btn-block{
+.btn-block {
   cursor: not-allowed;
   transition: all .3s ease-in;
 }
 
-@media (orientation: portrait)  and (max-width: 500px){
+@media (orientation: portrait) and (max-width: 500px) {
   .contato-box {
     flex-direction: column;
   }
 
   .coluna {
     width: 100%;
-  }
-
-
-  #contato {
-    height: 130vh;
-  }
-
-  .back-fade {
-    height: 130vh;
   }
 
   .coluna input,
@@ -134,5 +135,3 @@ textarea {
     padding: 5px;
   }
 }
-
-@media (orientation: portrait) and (max-width: 320px) {}
