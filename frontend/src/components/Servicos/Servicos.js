@@ -1,19 +1,30 @@
 import React, { Component } from 'react';
 import Slider from "react-slick";
-
+import axios from 'axios'
+import './Servicos.css';
 import "../../../node_modules/slick-carousel/slick/slick.css"
 import "../../../node_modules/slick-carousel/slick/slick-theme.css"
-import './Servicos.css';
 
 class Servicos extends Component {
   constructor(props) {
     super(props)
 
     this.state = {
-      titulo: '',
-      descricao: '',
-      imagem: ''
+      posts: ''
     };
+  }
+  componentDidMount() {
+    this.callAPI()
+      .then((response) => {
+        this.setState({
+          posts: response.data
+        })
+      })
+  }
+
+  callAPI = async () => {
+    let response = await axios.get('http://localhost:3000/servicos');
+    return response;
   }
 
   render() {
@@ -32,41 +43,30 @@ class Servicos extends Component {
         }
       ]
     };
-    const mystyle = {
-      // backgroundImage: 'url(' + this.state.imagem_servico + ')',
-      // backgroundSize: 'cover',
-      width: '100%',
-      height: '120vh',
-      display: 'flex',
-    }
-    const background = {
-      // backgroundImage: 'url(' + this.state.imagem_item + ')',
-      // backgroundSize: 'cover',
-    }
+    const { posts } = this.state;
     return (
-      <div style={mystyle}>
-        <div className="back-fade">
-          <div className="boxServicos">
+      <>
+        <div id="servicos">
+          <div className="back-fade">
             <div className="servicos">
               <h1>SERVIÇOS</h1>
               <Slider {...settings}>
-                <div className="slide-item" style={background}>
-                  <h2>Titulo do Serviço</h2>
-                </div>
-                <div className="slide-item" style={background}>
-                  <h2>Titulo do Serviço</h2>
-                </div>
-                <div className="slide-item" style={background}>
-                  <h2>Titulo do Serviço</h2>
-                </div>
-                <div className="slide-item" style={background}>
-                  <h2>Titulo do Serviço</h2>
-                </div>
+                {posts && posts.map((post) => {
+                  return (
+                    <div className="slide-item">
+                      <h2>{post['Título']}</h2>
+                      <img src={post.imagens[0].url} />
+                    </div>
+                  )
+                })}
               </Slider>
             </div>
+            <svg className="bottom" viewBox="0 0 500 60">
+              <polygon points="0,0 250,60 500,0 500,60 0,60" />
+            </svg>
           </div>
         </div>
-      </div>
+      </>
     );
   }
 }
