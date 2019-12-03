@@ -4,7 +4,7 @@ const config = () => {
   switch (env) {
     case 'dev':
       return {
-        url: 'http://localhost:3001'
+        url: 'http://localhost:3000'
       }
     case 'prod':
       return {
