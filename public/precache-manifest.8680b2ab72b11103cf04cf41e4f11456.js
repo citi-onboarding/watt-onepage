@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "4cba8e4e29063e6f3181631fb8aea3e7",
+    "revision": "befcbf0724904ca973597be8ce6e3e81",
     "url": "/index.html"
   },
   {
-    "revision": "c31df42c19b258042bc1",
+    "revision": "9a4d977c6bfdf489d9f8",
     "url": "/static/css/2.986bb682.chunk.css"
   },
   {
-    "revision": "a4549897138fca05c97f",
-    "url": "/static/css/main.ed67f3ee.chunk.css"
+    "revision": "c8401cde8eee5fd52089",
+    "url": "/static/css/main.e1862e88.chunk.css"
   },
   {
-    "revision": "c31df42c19b258042bc1",
-    "url": "/static/js/2.3cc0dcc0.chunk.js"
+    "revision": "9a4d977c6bfdf489d9f8",
+    "url": "/static/js/2.fdefe5cf.chunk.js"
   },
   {
-    "revision": "a4549897138fca05c97f",
-    "url": "/static/js/main.ca478178.chunk.js"
+    "revision": "c8401cde8eee5fd52089",
+    "url": "/static/js/main.1ab40e3d.chunk.js"
   },
   {
     "revision": "9aabb23bcbd2c9e69d36",
@@ -40,8 +40,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/WATTBRANCO.007a945d.png"
   },
   {
+    "revision": "634426025911ec1af91b63a182a9bb2b",
+    "url": "/static/media/clear-24px.63442602.svg"
+  },
+  {
     "revision": "602a4f5625c789536b52a4a56e1eec1f",
     "url": "/static/media/code.602a4f56.svg"
+  },
+  {
+    "revision": "6496df335dbbe227f9134fd86af8b773",
+    "url": "/static/media/envelope.6496df33.svg"
   },
   {
     "revision": "c4835487aa65f37c1c034d3f8632b39e",
@@ -52,12 +60,24 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/instagram-(2).c242ff6f.png"
   },
   {
+    "revision": "5de4ae8ec272e338769953ecd9db703c",
+    "url": "/static/media/instagram-logo.5de4ae8e.svg"
+  },
+  {
     "revision": "fa4da284c836294bf25bd953983470a1",
     "url": "/static/media/lemur-eKFsacaWzOg-unsplash (1).fa4da284.jpg"
   },
   {
     "revision": "b911578d45997c4a6fce695650f7f939",
     "url": "/static/media/menu-24px.b911578d.svg"
+  },
+  {
+    "revision": "03f89382fe684931de09500292e8e5cd",
+    "url": "/static/media/phone-call.03f89382.svg"
+  },
+  {
+    "revision": "05f2048f4b1a3ba8a256bbd76e396ca8",
+    "url": "/static/media/place.05f2048f.svg"
   },
   {
     "revision": "b7c9e1e479de3b53f1e4e30ebac2403a",
