@@ -8,14 +8,16 @@
   flex-direction: column;
   justify-content: center;
   margin: 0 auto;
-  width: 90%;
+  width: 80%;
   padding: 9% 0;
   position: relative;
 }
 
 .quemSomos .image {
   width: 50%;
-  height: 450px;
+  height: 290px;
+  display: flex;
+  align-items: center;
   position: absolute;
   right: 0;
 }
