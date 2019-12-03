@@ -179,6 +179,10 @@ class Contato extends Component {
                     <small>{this.state.address_contato}</small>
                   </div>
                 </form>
+                
+                <button onClick={()=>{window.scrollTo(0,0)}} id="btn-contact" className="btn-contact">
+                  <div className="arrow-up"></div>
+                </button>
               </div>
             </div>
           </div>
