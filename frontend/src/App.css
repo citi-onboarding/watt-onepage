@@ -25,6 +25,7 @@ html {
   animation-name: fadeOutRight;
   -webkit-animation-name: fadeOutRight;
   animation-duration: 0.6s;
+  z-index: 10;
 }
 
 .animationNone {
