@@ -2,9 +2,11 @@
     margin: 0;
     padding: 0;
 }
-.slick-slider{
+
+.slick-slider {
     z-index: 0;
 }
+
 svg {
     position: absolute;
 }
@@ -38,9 +40,36 @@ svg {
 }
 
 .slide-item h2 {
-    padding: 20px 30px;
+    padding: 20px 40px;
+    width: 50%;
+    color: white;
+    font-size: 1.3em;
+    text-shadow: 1px 1px 5px black;
+}
+
+.slide-item .descricao {
+    display: none;
+}
+
+
+
+
+.descricao p {
+    margin: 20px 40px;
+    margin-top: 100px;
+}
+
+.slide-item:hover .descricao {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    z-index: 2;
+    text-align: justify;
     color: white;
     font-size: 1em;
+    background: rgb(50, 65, 124, 0.7);
+    display: inline-block;
 }
 
 .servicos {
