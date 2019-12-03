@@ -19,7 +19,9 @@ exports = module.exports = function (app) {
 	app.get('/servicos', apiServicos.getServicos)
 	app.get('/banner', apiBanner.getBanner)
 	app.get('/quemsomos', apiQuemSomos.getQuemSomos)
-
+	app.get('*', (req, res) => {
+		res.redirect('/');
+	});
 	// envia o email
 	app.post('/contato', (req, res) => {
 		//baixa os dados
