@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "4edc4b397e05b238230e5508abbba7a3",
+    "revision": "5b662d3beca78ff2fec019517902f5db",
     "url": "/index.html"
   },
   {
-    "revision": "b9305597f11a13654070",
+    "revision": "7380a00421b43eda8eb1",
     "url": "/static/css/2.986bb682.chunk.css"
   },
   {
-    "revision": "a495a0cc1398cbfd83df",
-    "url": "/static/css/main.0e9f0f3f.chunk.css"
+    "revision": "74f54bc8a66fb2d96fcd",
+    "url": "/static/css/main.8c1f8965.chunk.css"
   },
   {
-    "revision": "b9305597f11a13654070",
-    "url": "/static/js/2.3e6dca30.chunk.js"
+    "revision": "7380a00421b43eda8eb1",
+    "url": "/static/js/2.d923c2ec.chunk.js"
   },
   {
-    "revision": "a495a0cc1398cbfd83df",
-    "url": "/static/js/main.c6bdc0c0.chunk.js"
+    "revision": "74f54bc8a66fb2d96fcd",
+    "url": "/static/js/main.58e6f723.chunk.js"
   },
   {
     "revision": "aa5dd861c3df341bfb4f",
@@ -40,8 +40,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/WATTBRANCO.007a945d.png"
   },
   {
+    "revision": "634426025911ec1af91b63a182a9bb2b",
+    "url": "/static/media/clear-24px.63442602.svg"
+  },
+  {
     "revision": "602a4f5625c789536b52a4a56e1eec1f",
     "url": "/static/media/code.602a4f56.svg"
+  },
+  {
+    "revision": "3101fb3dca9b92e9b14a1bb3e0b6be5f",
+    "url": "/static/media/envelope.3101fb3d.svg"
   },
   {
     "revision": "c4835487aa65f37c1c034d3f8632b39e",
@@ -52,12 +60,24 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/instagram-(2).c242ff6f.png"
   },
   {
+    "revision": "5ccd53e5e29be810742350aa35a3042e",
+    "url": "/static/media/instagram-logo.5ccd53e5.svg"
+  },
+  {
     "revision": "fa4da284c836294bf25bd953983470a1",
     "url": "/static/media/lemur-eKFsacaWzOg-unsplash (1).fa4da284.jpg"
   },
   {
     "revision": "b911578d45997c4a6fce695650f7f939",
     "url": "/static/media/menu-24px.b911578d.svg"
+  },
+  {
+    "revision": "871e8c411d629f429705e18a13c4c4ef",
+    "url": "/static/media/phone-call.871e8c41.svg"
+  },
+  {
+    "revision": "cdfd44f1d461dcd7d7889519cc3925f5",
+    "url": "/static/media/place.cdfd44f1.svg"
   },
   {
     "revision": "b7c9e1e479de3b53f1e4e30ebac2403a",
