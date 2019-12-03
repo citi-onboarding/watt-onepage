@@ -16,7 +16,9 @@
 
 .quemSomos .image {
   width: 50%;
-  height: 450px;
+  height: 290px;
+  display: flex;
+  align-items: center;
   position: absolute;
   right: 0;
 }

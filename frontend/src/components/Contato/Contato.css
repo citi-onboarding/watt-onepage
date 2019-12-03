@@ -13,6 +13,9 @@ svg {
 input {
   outline: 0;
 }
+input::placeholder {
+  font-size: 20px;
+}
 
 button {
   outline: 0;
@@ -21,6 +24,9 @@ button {
 textarea {
   resize: none;
   outline: 0;
+}
+textarea::placeholder {
+  font-size: 20px;
 }
 
 .linha {
@@ -65,7 +71,7 @@ textarea {
 }
 
 .coluna .id {
-  margin-right: 10px;
+  margin-right: 28px;
 }
 
 /* id's de contato */
@@ -84,7 +90,7 @@ textarea {
 
 #form-contato {
   margin: 0 auto;
-  width: 60%;
+  width: 70%;
   color: white;
   padding: 5px;
 }
@@ -92,7 +98,7 @@ textarea {
 .button-contato {
   padding: 15px 0;
   color: white;
-  background: rgb(128, 106, 189);
+  background: #0561A8;
   border: none;
   border-radius: 10px;
   align-items: flex-end;
@@ -100,17 +106,44 @@ textarea {
 }
 
 .button-contato:hover {
-  background: rgb(124, 92, 206);
+  background: #2D53A2;
+
 }
 
 
 .button-contato:active {
-  background: rgb(66, 40, 133);
+  background: #32417C;
 }
 
 .btn-block {
   cursor: not-allowed;
   transition: all .3s ease-in;
+}
+.btn-contact {
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  border: none;
+  background: #FFF;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+.arrow-up {
+  margin-bottom: -8px;
+  content: '';
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  border-top: 0.2em solid #333;
+  border-left: 0.2em solid #333;
+  transform: rotate(45deg);
+  color: #606164;
+}
+.infoContainer{
+  display: flex;
+  align-items: center;
+  font-size: 20px;
 }
 
 @media (orientation: portrait) and (max-width: 500px) {
