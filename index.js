@@ -6,7 +6,7 @@ keystone.init({
   'name': 'Admin - WATT Consultoria',
   'brand': "WATT Consultoria",
   'admin path': 'admin',
-  'port': 3001,
+  'port': 3000,
   // Paths to our application static files
   'static': [path.join(__dirname, '/public')],
   // Keystone includes an updates framework, 
