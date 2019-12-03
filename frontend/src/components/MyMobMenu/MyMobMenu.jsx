@@ -4,6 +4,7 @@ import face from '../../ícones/facebook.png';
 import linked from '../../ícones/linkedin-(1).png';
 import insta from '../../ícones/instagram-(2).png';
 import menuIcon from '../../ícones/menu-24px.svg';
+import xIcon from '../../ícones/clear-24px.svg';
 import WATTLogoVetor from '../../ícones/Logo_watt_consultoria_vetorizada_BRANCA.png';
 
 class MyMobMenu extends Component{
@@ -38,7 +39,7 @@ class MyMobMenu extends Component{
         {/* Aparelho em portrait */}
         <div className="casePortrait" >
           <div className="buttonWrapper" >
-            <a className="fixedMobButton" ><img onClick={()=> this.animate()} color="#FFFFFF" src={menuIcon} alt="WATT Consusltoria" height="60" width="60"></img></a>  
+            <a className="fixedMobButton" ><img onClick={()=> this.animate()} color="#FFFFFF" src={xIcon} alt="WATT Consusltoria" height="60" width="60"></img></a>  
           </div>
           <div id="MobMenu" className="mobMenu" >     
 
