@@ -15,11 +15,13 @@
   },
   "scripts": {
     "start": "react-scripts start",
+    "build-rename-js": "renamer --find 'main\\.[^\\.]+\\.js' --replace 'main.js' build/static/js/*.js",
+    "build-rename-css": "renamer --find 'main\\.[^\\.]+\\.css' --replace 'main.css' build/static/css/*.css",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "server-l": "rm -rf ../public && npm run build && mv ./build ../public",
-    "server-w": "npm run build && move ./build ../public",
+    "server-l": "npm run build-rename-js && npm run build-rename-css && rm -rf ../public && npm run build && mv ./build ../public",
+    "server-w": "npm run build-rename-js && npm run build-rename-css && npm run build && move ./build ../public",
     "go-l": "npm install && npm run build && mv ./build ../public",
     "go-w": "npm install && npm run build && move ./build ../public"
   },
@@ -37,5 +39,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "renamer": "^1.1.4"
   }
 }
