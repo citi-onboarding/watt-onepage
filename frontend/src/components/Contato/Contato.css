@@ -134,6 +134,11 @@ textarea {
   transform: rotate(45deg);
   color: #606164;
 }
+.infoContainer{
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+}
 
 @media (orientation: portrait) and (max-width: 500px) {
   .contato-box {

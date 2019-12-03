@@ -187,10 +187,10 @@ class Contato extends Component {
                     </div>
                   </div>
                   <div className="coluna" id="contato-info">
-                    <div><img style={smallSpacedIcon} src = {instagramIcon}></img> <small>{this.state.media_contato}</small></div>
-                    <div><img style={smallSpacedIcon} src = {phoneIcon}></img> <small>{this.state.phone_contato}</small></div>
-                    <div><img style={smallSpacedIcon} src = {envelopeIcon}></img> <small>{this.state.email_contato}</small></div>
-                    <div><img style={smallSpacedIcon} src = {placeIcon}></img> <small>{this.state.address_contato}</small></div>
+                    <div className = "infoContainer" ><img style={smallSpacedIcon} src = {instagramIcon}></img> {this.state.media_contato}</div>
+                    <div className = "infoContainer" ><img style={smallSpacedIcon} src = {phoneIcon}></img> {this.state.phone_contato}</div>
+                    <div className = "infoContainer" ><img style={smallSpacedIcon} src = {envelopeIcon}></img> {this.state.email_contato}</div>
+                    <div className = "infoContainer" ><img style={smallSpacedIcon} src = {placeIcon}></img> {this.state.address_contato}</div>
                   </div>
                 </form>
                 
