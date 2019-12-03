@@ -1,8 +1,8 @@
-const env = process.env.NODE_ENV;
+const env = 'prod';
 
 const config = () => {
   switch (env) {
-    case 'development':
+    case 'dev':
       return {
         url: 'http://localhost:3001'
       }

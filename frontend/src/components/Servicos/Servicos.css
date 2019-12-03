@@ -209,7 +209,7 @@ svg {
     color: #606164;
 }
 
-@media(max-width: 998px) {
+@media(max-width: 1024px) {
 
     .slick-dots li {
         width: 20px;

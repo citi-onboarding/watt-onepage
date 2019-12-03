@@ -31,8 +31,7 @@ class Contato extends Component {
   }
   componentDidMount() {
     this.callApi()
-      .then((response) => {
-        console.log(response)
+      .then((response) => { 
         this.setState({
           media_contato: response.data[0].media,
           email_contato: response.data[0].email,
