@@ -4,7 +4,7 @@ import axios from 'axios'
 import './Servicos.css';
 import "../../../node_modules/slick-carousel/slick/slick.css"
 import "../../../node_modules/slick-carousel/slick/slick-theme.css"
-const config = require('../../config/config'); 
+const config = require('../../config/config');
 class Servicos extends Component {
   constructor(props) {
     super(props)
@@ -38,7 +38,8 @@ class Servicos extends Component {
         {
           breakpoint: 1024,
           settings: {
-            slidesToShow: 1
+            slidesToShow: 1,
+            dots: false
           }
         }
       ]
@@ -55,6 +56,7 @@ class Servicos extends Component {
                   return (
                     <div className="slide-item">
                       <h2>{post['Título']}</h2>
+                      <div class="descricao"><p>{post['Descrição']}</p></div>
                       <img src={post.imagens[0].url} />
                     </div>
                   )
