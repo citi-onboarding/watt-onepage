@@ -9,7 +9,7 @@ const Servicos = new keystone.List('Servicos', {
 // Then we gonna add the fields
 Servicos.add({
   Título: { type: Types.Text, required: true, index: true, initial: true },
-  Descrição: { type: Types.Text, initial: true, required: true, index: true },
+  Descrição: { type: Types.Textarea, initial: true, required: true, index: true },
   imagens: { type: Types.CloudinaryImages, initial: true, required: true }
 });
 
