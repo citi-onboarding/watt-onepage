@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import axios from 'axios'
 import logo_watt from './Logo_watt.png'
 import './Banner.css'
-
+const config = require('../../config/config'); 
 class Banner extends Component {
   constructor(props) {
     super(props)
@@ -11,7 +11,7 @@ class Banner extends Component {
     }
   }
   callApi = async () => {
-    const response = await axios.get('https://watt-onepage.herokuapp.com/banner')
+    const response = await axios.get(`${config.url}/banner`)
     return response;
   }
 

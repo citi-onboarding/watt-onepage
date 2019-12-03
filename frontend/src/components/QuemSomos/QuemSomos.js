@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './QuemSomos.css';
 import axios from 'axios'
+const config = require('../../config/config'); 
 class QuemSomos extends Component {
   constructor(props) {
     super(props)
@@ -23,7 +24,7 @@ class QuemSomos extends Component {
   }
 
   callApi = async () => {
-    const response = await axios.get('https://watt-onepage.herokuapp.com/quemsomos')
+    const response = await axios.get(`${config.url}/quemsomos`)
     return response;
   }
 

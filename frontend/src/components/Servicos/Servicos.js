@@ -4,7 +4,7 @@ import axios from 'axios'
 import './Servicos.css';
 import "../../../node_modules/slick-carousel/slick/slick.css"
 import "../../../node_modules/slick-carousel/slick/slick-theme.css"
-
+const config = require('../../config/config'); 
 class Servicos extends Component {
   constructor(props) {
     super(props)
@@ -23,7 +23,7 @@ class Servicos extends Component {
   }
 
   callAPI = async () => {
-    let response = await axios.get('https://watt-onepage.herokuapp.com/servicos');
+    let response = await axios.get(`${config.url}/servicos`);
     return response;
   }
 

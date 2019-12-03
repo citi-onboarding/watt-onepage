@@ -9,7 +9,7 @@ import Banner from './components/Banner/Banner'
 import QuemSomos from './components/QuemSomos/QuemSomos'
 import axios from 'axios'
 import './App.css';
-
+import config from './config/config'
 class App extends Component {
   constructor(props) {
     super(props)
@@ -28,7 +28,7 @@ class App extends Component {
       })
   }
   callApi = async () => {
-    const response = await axios.get('https://watt-onepage.herokuapp.com/banner')
+    const response = await axios.get(`${config.url}/banner`)
     return response;
   }
   render() {

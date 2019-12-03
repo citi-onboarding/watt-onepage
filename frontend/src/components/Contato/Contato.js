@@ -4,7 +4,7 @@ import './Contato.css'
 import ReactNotification from 'react-notifications-component'
 import { store } from 'react-notifications-component';
 import 'react-notifications-component/dist/theme.css'
-
+const config = require('../../config/config'); 
 class Contato extends Component {
   constructor(props) {
     super(props)
@@ -34,18 +34,18 @@ class Contato extends Component {
       .then((response) => {
         console.log(response)
         this.setState({
-          media_contato: response.data[0].Media,
-          email_contato: response.data[0].Email,
-          address_contato: response.data[0].Address,
-          phone_contato: response.data[0].Telefone,
-          imagem_contato: response.data[0].Imagens[0].url
+          media_contato: response.data[0].media,
+          email_contato: response.data[0].email,
+          address_contato: response.data[0].address,
+          phone_contato: response.data[0].phone,
+          imagem_contato: response.data[0].imagens[0].url
         })
 
       })
   }
 
   callApi = async () => {
-    const response = await axios.get('https://watt-onepage.herokuapp.com/contato')
+    const response = await axios.get(`${config.url}/contato`)
     return response;
   }
 
@@ -78,7 +78,7 @@ class Contato extends Component {
     const mensagem = this.state.mensagem;
     (async () => {
       try {
-        const res = await axios.post('https://watt-onepage.herokuapp.com/contato', {
+        const res = await axios.post(`${config.url}/contato`, {
           nome: nome,
           email: email,
           tel: tel,
