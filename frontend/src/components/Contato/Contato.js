@@ -4,6 +4,15 @@ import './Contato.css'
 import ReactNotification from 'react-notifications-component'
 import { store } from 'react-notifications-component';
 import 'react-notifications-component/dist/theme.css'
+
+
+import instagramIcon from '../../ícones/instagram-logo.svg';
+import phoneIcon from '../../ícones/phone-call.svg';
+import envelopeIcon from '../../ícones/envelope.svg';
+import placeIcon from '../../ícones/place.svg';
+
+
+
 const config = require('../../config/config'); 
 class Contato extends Component {
   constructor(props) {
@@ -141,6 +150,11 @@ class Contato extends Component {
     const mystyle = {
       backgroundImage: 'url(' + this.state.imagem_contato + ')',
     }
+    const smallSpacedIcon = {
+      width: '20px',
+      height: '20px',
+      marginRight: '10px'
+    }
 
     return (
       <>
@@ -163,7 +177,7 @@ class Contato extends Component {
                       <input required name="assunto" placeholder="Assunto" onChange={this.handleAssuntoChange} value={this.state.assunto} />
                     </div>
                     <div className="coluna">
-                      <textarea required name="mensagem" placeholder="Mensagem" cols="50" rows="11" onChange={this.handleMesageChange} value={this.state.mensagem}></textarea>
+                      <textarea required name="mensagem" placeholder="Como podemos te ajudar?" cols="50" rows="11" onChange={this.handleMesageChange} value={this.state.mensagem}></textarea>
                       {this.state.flag ?
                         <button className="button-contato" type="submit">Enviar</button> :
                         <button className="button-contato btn-block" type="submit">
@@ -173,12 +187,16 @@ class Contato extends Component {
                     </div>
                   </div>
                   <div className="coluna" id="contato-info">
-                    <small>{this.state.media_contato}</small>
-                    <small>{this.state.phone_contato}</small>
-                    <small>{this.state.email_contato}</small>
-                    <small>{this.state.address_contato}</small>
+                    <div className = "infoContainer" ><img style={smallSpacedIcon} src = {instagramIcon}></img> {this.state.media_contato}</div>
+                    <div className = "infoContainer" ><img style={smallSpacedIcon} src = {phoneIcon}></img> {this.state.phone_contato}</div>
+                    <div className = "infoContainer" ><img style={smallSpacedIcon} src = {envelopeIcon}></img> {this.state.email_contato}</div>
+                    <div className = "infoContainer" ><img style={smallSpacedIcon} src = {placeIcon}></img> {this.state.address_contato}</div>
                   </div>
                 </form>
+                
+                <button onClick={()=>{window.scrollTo(0,0)}} id="btn-contact" className="btn-contact">
+                  <div className="arrow-up"></div>
+                </button>
               </div>
             </div>
           </div>

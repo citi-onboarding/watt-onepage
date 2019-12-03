@@ -56,6 +56,7 @@ class Servicos extends Component {
                   return (
                     <div className="slide-item">
                       <h2>{post['Título']}</h2>
+                      <div class="descricao"><p>{post['Descrição']}</p></div>
                       <img src={post.imagens[0].url} />
                     </div>
                   )
