@@ -177,7 +177,7 @@ class Contato extends Component {
                       <input required name="assunto" placeholder="Assunto" onChange={this.handleAssuntoChange} value={this.state.assunto} />
                     </div>
                     <div className="coluna">
-                      <textarea required name="mensagem" placeholder="Mensagem" cols="50" rows="11" onChange={this.handleMesageChange} value={this.state.mensagem}></textarea>
+                      <textarea required name="mensagem" placeholder="Como podemos te ajudar?" cols="50" rows="11" onChange={this.handleMesageChange} value={this.state.mensagem}></textarea>
                       {this.state.flag ?
                         <button className="button-contato" type="submit">Enviar</button> :
                         <button className="button-contato btn-block" type="submit">
