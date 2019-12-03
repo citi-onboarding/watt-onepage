@@ -71,7 +71,7 @@ textarea::placeholder {
 }
 
 .coluna .id {
-  margin-right: 10px;
+  margin-right: 28px;
 }
 
 /* id's de contato */
@@ -90,7 +90,7 @@ textarea::placeholder {
 
 #form-contato {
   margin: 0 auto;
-  width: 60%;
+  width: 75%;
   color: white;
   padding: 5px;
 }
