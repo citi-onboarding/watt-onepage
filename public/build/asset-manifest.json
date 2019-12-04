@@ -1,0 +1,39 @@
+{
+  "files": {
+    "main.css": "/static/css/main.f2676306.chunk.css",
+    "main.js": "/static/js/main.8a296c05.chunk.js",
+    "main.js.map": "/static/js/main.8a296c05.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.baeb1881.js",
+    "runtime-main.js.map": "/static/js/runtime-main.baeb1881.js.map",
+    "static/css/2.986bb682.chunk.css": "/static/css/2.986bb682.chunk.css",
+    "static/js/2.a22bfa34.chunk.js": "/static/js/2.a22bfa34.chunk.js",
+    "static/js/2.a22bfa34.chunk.js.map": "/static/js/2.a22bfa34.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.dc6d403b8369fe2d6648d8f2333b95d8.js": "/precache-manifest.dc6d403b8369fe2d6648d8f2333b95d8.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/2.986bb682.chunk.css.map": "/static/css/2.986bb682.chunk.css.map",
+    "static/css/main.f2676306.chunk.css.map": "/static/css/main.f2676306.chunk.css.map",
+    "static/media/CITi.png": "/static/media/CITi.a764f0c0.png",
+    "static/media/Logo_watt.png": "/static/media/Logo_watt.e7f4e7b2.png",
+    "static/media/Logo_watt_consultoria_vetorizada_BRANCA.png": "/static/media/Logo_watt_consultoria_vetorizada_BRANCA.b974839b.png",
+    "static/media/WATTBRANCO.png": "/static/media/WATTBRANCO.007a945d.png",
+    "static/media/clear-24px.svg": "/static/media/clear-24px.63442602.svg",
+    "static/media/code.svg": "/static/media/code.602a4f56.svg",
+    "static/media/envelope.svg": "/static/media/envelope.6496df33.svg",
+    "static/media/heart.svg": "/static/media/heart.c4835487.svg",
+    "static/media/instagram-(2).png": "/static/media/instagram-(2).c242ff6f.png",
+    "static/media/instagram-logo.svg": "/static/media/instagram-logo.5de4ae8e.svg",
+    "static/media/lemur-eKFsacaWzOg-unsplash (1).jpg": "/static/media/lemur-eKFsacaWzOg-unsplash (1).fa4da284.jpg",
+    "static/media/menu-24px.svg": "/static/media/menu-24px.b911578d.svg",
+    "static/media/phone-call.svg": "/static/media/phone-call.03f89382.svg",
+    "static/media/place.svg": "/static/media/place.05f2048f.svg",
+    "static/media/slick-theme.css": "/static/media/slick.f97e3bbf.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.baeb1881.js",
+    "static/css/2.986bb682.chunk.css",
+    "static/js/2.a22bfa34.chunk.js",
+    "static/css/main.f2676306.chunk.css",
+    "static/js/main.8a296c05.chunk.js"
+  ]
+}
