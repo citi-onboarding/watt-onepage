@@ -4,41 +4,38 @@ import MyMobMenu from './components/MyMobMenu/MyMobMenu';
 import background from './imagens/lemur-eKFsacaWzOg-unsplash (1).jpg';
 import Contato from './components/Contato/Contato';
 import Servicos from './components/Servicos/Servicos';
-import Footer from './components/Footer/Footer'
-import Banner from './components/Banner/Banner'
-import QuemSomos from './components/QuemSomos/QuemSomos'
-import axios from 'axios'
+import Footer from './components/Footer/Footer';
+import Banner from './components/Banner/Banner';
+import QuemSomos from './components/QuemSomos/QuemSomos';
+import axios from 'axios';
 import './App.css';
 import config from './config/config'
 class App extends Component {
   constructor(props) {
-    super(props)
-
+    super(props);
     this.state = {
-      imagem_banner: ''
-    }
+      imagem_banner: '',
+    };
   }
-  componentDidMount() {
-    this.callApi()
-      .then((response) => {
-        this.setState({
-          imagem_banner: response.data[0].imagens[0].url
-        })
 
-      })
+  componentDidMount() {
+    (async () => {
+      const response = await axios.get(`${config.url}/banner`)
+      this.setState({
+        imagem_banner: response.data[0].imagens[0].url,
+      });
+    })();
   }
-  callApi = async () => {
-    const response = await axios.get(`${config.url}/banner`)
-    return response;
-  }
+
   render() {
+    const { imagem_banner } = this.state;
 
     const mystyle = {
-      backgroundImage: 'url(' + this.state.imagem_banner + ')',
-    }
+      backgroundImage: `url(${imagem_banner}`,
+    };
 
     return (
-      <div className="App" style={{
+      <section className="App" style={{
         backgroundImage: `url(${background})`,
         backgroundSize: "100%",
         backgroundRepeat: "no-repeat"
@@ -48,17 +45,18 @@ class App extends Component {
         <div id="toBeAnimated" className="animationNone" >
           <MyMobMenu />
         </div>
-        <div className="content">
+        <section className="content">
           <div className="back-banner" style={mystyle}>
             <Banner />
             <Servicos />
           </div>
           <QuemSomos />
           <Contato />
-        </div>
+        </section>
         <Footer />
-      </div>
+      </section>
     );
   }
 }
+
 export default App;

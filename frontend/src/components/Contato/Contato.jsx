@@ -10,9 +10,19 @@ import envelopeIcon from '../../ícones/envelope.svg';
 import placeIcon from '../../ícones/place.svg';
 import config from '../../config/config';
 
-function inputLabel({name, placeholder, type,  }){
-  return(
-    
+function InputLabel({ nome, placeholder, type, escopo, value, ariaLabel }) {
+  return (
+    <label htmlFor={nome} id={nome} aria-label={ariaLabel}>
+      <input required name={nome} aria-labelledby={nome} placeholder={placeholder} type={type} state-type={nome} onChange={escopo.handleChange} value={value} />
+    </label>
+  );
+}
+function InfoContainer({ src, content, alt }) {
+  return (
+    <li className="infoContainer" >
+      <img className="smallSpacedIcon" src={src} alt={alt} />
+      {content}
+    </li>
   );
 }
 
@@ -24,7 +34,7 @@ class Contato extends Component {
     this.state = {
       nome: '',
       email: '',
-      tel: '',
+      telefone: '',
       assunto: '',
       mensagem: '',
       media_contato: '',
@@ -32,33 +42,29 @@ class Contato extends Component {
       address_contato: '',
       phone_contato: '',
       imagem_contato: '',
-      flag: true
+      flag: true,
     };
   }
 
   componentDidMount() {
-    this.callApi()
-      .then((response) => {
-        this.setState({
-          media_contato: response.data[0].media,
-          email_contato: response.data[0].email,
-          address_contato: response.data[0].address,
-          phone_contato: response.data[0].phone,
-          imagem_contato: response.data[0].imagens[0].url
-        })
+    (async () => {
+      const response = await axios.get(`${config.url}/contato`);
 
-      })
-  }
-
-  callApi = async () => {
-    return await axios.get(`${config.url}/contato`);
+      this.setState({
+        media_contato: response.data[0].media,
+        email_contato: response.data[0].email,
+        address_contato: response.data[0].address,
+        phone_contato: response.data[0].phone,
+        imagem_contato: response.data[0].imagens[0].url,
+      });
+    })();
   }
 
   handleChange(event) {
     const newState = {};
     const type = event.target.getAttribute('state-type');
-    newState[type] = event.targer.value;
-    this.setState({ newState });
+    newState[type] = event.target.value;
+    this.setState(newState);
   }
 
   sendEmail(e) {
@@ -66,86 +72,78 @@ class Contato extends Component {
     const {
       nome,
       email,
-      tel,
+      telefone,
       assunto,
       mensagem,
     } = this.state;
+
+    const notificationsBase = {
+      insert: 'top',
+      container: 'top-right',
+      animationIn: ['animated', 'fadeIn'],
+      animationOut: ['animated', 'fadeOut'],
+      dismiss: {
+        duration: 3000,
+        onScreen: true,
+      },
+    };
+
+    const sendNotifications = (status) => {
+      const { flag } = this.state;
+      this.setState({ flag: !flag });
+      const notification = status ? {
+        title: 'Enviado!',
+        message: 'Mensagem enviada',
+        type: 'success',
+      } : {
+          title: 'Erro ao enviar!',
+          message: 'Tente novamente mais tarde',
+          type: 'danger',
+        };
+      store.addNotification(...notificationsBase, ...notification);
+    };
+
     (async () => {
       try {
         const res = await axios.post(`${config.url}/contato`, {
-          nome: nome,
-          email: email,
-          tel: tel,
-          assunto: assunto,
-          mensagem: mensagem
-        })
-        if (res.status === 200) {
-          this.setState({ flag: !this.state.flag });
-          store.addNotification({
-            title: "Enviado!",
-            message: "Mensagem enviada",
-            type: "success",
-            insert: "top",
-            container: "top-right",
-            animationIn: ["animated", "fadeIn"],
-            animationOut: ["animated", "fadeOut"],
-            dismiss: {
-              duration: 3000,
-              onScreen: true
-            }
-          });
-        }
-        else {
-          this.setState({ flag: !this.state.flag });
-          store.addNotification({
-            title: "Erro ao enviar!",
-            message: "Tente novamente mais tarde",
-            type: "danger",
-            insert: "top",
-            container: "top-right",
-            animationIn: ["animated", "fadeIn"],
-            animationOut: ["animated", "fadeOut"],
-            dismiss: {
-              duration: 3000,
-              onScreen: true
-            }
-          });
-        }
-      } catch (err) {
-        this.setState({ flag: !this.state.flag });
-        store.addNotification({
-          title: "Erro ao enviar!",
-          message: "Tente novamente mais tarde",
-          type: "danger",
-          insert: "top",
-          container: "top-right",
-          animationIn: ["animated", "fadeIn"],
-          animationOut: ["animated", "fadeOut"],
-          dismiss: {
-            duration: 3000,
-            onScreen: true
-          }
+          nome,
+          email,
+          telefone,
+          assunto,
+          mensagem,
         });
+        sendNotifications(res.status === 200);
+      } catch (err) {
+        sendNotifications(false);
       }
-    })()
+    })();
 
     e.preventDefault();
   }
 
   render() {
+    const {
+      nome,
+      email,
+      telefone,
+      assunto,
+      mensagem,
+      media_contato,
+      email_contato,
+      address_contato,
+      phone_contato,
+      imagem_contato,
+      flag,
+    } = this.state;
+
     const mystyle = {
-      backgroundImage: 'url(' + this.state.imagem_contato + ')',
-    }
-    const smallSpacedIcon = {
-      width: '20px',
-      height: '20px',
-      marginRight: '10px'
-    }
+      backgroundImage: `url(${imagem_contato})`,
+    };
 
     return (
       <>
         <ReactNotification />
-        <div id='contato' style={mystyle}>
+        <section id="contato" style={mystyle}>
           <svg className="top" viewBox="0 0 500 60">
             <polygon points="0,0 500,0 0,60" />
           </svg>
@@ -156,44 +154,40 @@ class Contato extends Component {
                 <form onSubmit={this.sendEmail}>
                   <div className="contato-box">
                     <div id="id-contato" className="coluna id">
-                      <label htmlFor="nome">
-                        <input required name="nome" placeholder="Nome" type="text" state-type="name" onChange={this.handleChange} value={this.state.name} />
-                      </label>
-                      <label htmlFor="email">
-                        <input required name="email" placeholder="E-mail" type="email" state-type="email" onChange={this.handleChange} value={this.state.email} />
-                      </label>
-                      <label htmlFor="telefone">
-                        <input required name="telefone" placeholder="Telefone" type="tel" state-type="telefone" onChange={this.handleChange} value={this.state.telefone} />
-                      </label>
-                      <label htmlFor="assunto">
-                        <input required name="assunto" placeholder="Assunto" type="text" state-type="assunto" onChange={this.handleChange} value={this.state.assunto} />
-                      </label>
+                      <InputLabel nome="nome" placeholder="Nome" type="text" escopo={this} ariaLabel="Insira seu nome" value={nome} />
+                      <InputLabel nome="email" placeholder="E-mail" type="email" escopo={this} ariaLabel="Insira seu email" value={email} />
+                      <InputLabel nome="telefone" placeholder="Telefone" type="text" escopo={this} ariaLabel="Insira seu telefone" value={telefone} />
+                      <InputLabel nome="assunto" placeholder="Assunto" type="text" escopo={this} ariaLabel="Insira o assunto" value={assunto} />
                     </div>
                     <div className="coluna">
-                    <label htmlFor="mensagem">
-                      <textarea required name="mensagem" placeholder="Como podemos te ajudar?" state-type="mensagem" cols="50" rows="11" onChange={this.handleChange} value={this.state.mensagem}></textarea>
-                    </label>
-                      {this.state.flag ?
-                        <button className="button-contato" type="submit">Enviar</button> :
-                        <button className="button-contato btn-block" type="submit">
+                      <label id="mensagem" htmlFor="mensagem" aria-label="Como podemos te ajudar" >
+                        <textarea id="mensagem" required name="mensagem" aria-labelledby="mensagem" placeholder="Como podemos te ajudar?" state-type="mensagem" cols="50" rows="11" onChange={this.handleChange} value={mensagem}></textarea>
+                      </label>
+                      {flag ?
+                        (<button className="button-contato" type="submit">
+                          Enviar
+                         </button>)
+                        :
+                        (<button className="button-contato btn-block" type="submit">
                           Enviando...
-                        </button>}
+                        </button>)
+                      }
                     </div>
                   </div>
-                  <div className="coluna" id="contato-info">
-                    <div className = "infoContainer" ><img style={smallSpacedIcon} src = {instagramIcon}></img> {this.state.media_contato}</div>
-                    <div className = "infoContainer" ><img style={smallSpacedIcon} src = {phoneIcon}></img> {this.state.phone_contato}</div>
-                    <div className = "infoContainer" ><img style={smallSpacedIcon} src = {envelopeIcon}></img> {this.state.email_contato}</div>
-                    <div className = "infoContainer" ><img style={smallSpacedIcon} src = {placeIcon}></img> {this.state.address_contato}</div>
-                  </div>
+                  <ul className="coluna" id="contato-info">
+                    <InfoContainer src={instagramIcon} content={media_contato} alt="icone do instagram"/>
+                    <InfoContainer src={phoneIcon} content={phone_contato} alt="icone de telefone"/>
+                    <InfoContainer src={envelopeIcon} content={email_contato} alt="icone de envelope" />
+                    <InfoContainer src={placeIcon} content={address_contato} alt="icone de endereço" />
+                  </ul>
                 </form>
-                <button onClick={()=>{window.scrollTo(0,0)}} id="btn-contact" className="btn-contact">
+                <button aria-label="Ir para o topo da página" onClick={() => { window.scrollTo(0, 0) }} id="btn-contact" className="btn-contact">
                   <div className="arrow-up"></div>
                 </button>
               </div>
             </div>
           </div>
-        </div>
+        </section>
       </>
     )
   }

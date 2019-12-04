@@ -64,10 +64,20 @@
     object-fit: contain;
 }
 
+.mediaMob {
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+}
+
 @media only screen and (max-width: 768px) {
 
     /* For mobile phones: */
-    .mediaMob {}
+    .mediaMob {
+        background: transparent;
+        border: 0;
+        cursor: pointer;
+    }
 
     .mediaDesk {
         display: none;
@@ -82,7 +92,11 @@
 @media only screen and (orientation: portrait) {
 
     /* For mobile phones: */
-    .mediaMob {}
+    .mediaMob {
+        background: transparent;
+        border: 0;
+        cursor: pointer;
+    }
 
     .mediaDesk {
         display: none;
@@ -98,7 +112,11 @@
 @media only screen and (max-height: 550px) and (orientation: landscape) {
 
     /* For mobile phones: */
-    .mediaMob {}
+    .mediaMob {
+        background: transparent;
+        border: 0;
+        cursor: pointer;
+    }
 
     .mediaDesk {
         display: none;
@@ -116,9 +134,11 @@
 
     /* For desktop: */
     .mediaMob {
+        background: transparent;
+        border: 0;
+        cursor: pointer;
         display: none;
     }
 
-    .mediaDesk {}
 
 }
