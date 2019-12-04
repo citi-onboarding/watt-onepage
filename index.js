@@ -17,7 +17,7 @@ keystone.init({
   'auto update': true,
   // The url for your MongoDB connection
   'mongo': 'mongodb://admin:admin@watt-shard-00-00-pwbop.mongodb.net:27017,watt-shard-00-01-pwbop.mongodb.net:27017,watt-shard-00-02-pwbop.mongodb.net:27017/test?ssl=true&replicaSet=WATT-shard-0&authSource=admin&retryWrites=true&w=majority',
-  'cloudinary config': 'cloudinary://475133448126917:AVR4ftolENYlO7sT5O35oY6Wd4A@dnfbm4efs',
+  'cloudinary config': 'cloudinary://475133448126917:AVR4ftolENYlO7sT5O35oY6Wd4A@wattconsultoria',
   // Whether to enable built-in authentication for Keystone's Admin UI,
   'auth': true,
   // The key of the Keystone List for users, required if auth is set to true
