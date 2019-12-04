@@ -28,7 +28,13 @@ button {
   outline: 0;
 }
 
+label {
+  width: 100%;
+}
+
 textarea {
+  width: calc(100% - 30px);
+  height: calc(100% - 30px);
   resize: none;
   outline: 0;
 }
@@ -71,8 +77,16 @@ textarea::placeholder {
 /* Coluna */
 .coluna input,
 .coluna textarea {
-  /* margin-bottom: 10px; */
   padding: 15px;
+  border-radius: 10px;
+  border: none;
+  background: rgb(212, 209, 209);
+  color: rgb(85, 85, 85);
+
+}
+
+.coluna label {
+  /* padding: 15px; */
   border-radius: 10px;
   border: none;
   background: rgb(212, 209, 209);
@@ -172,7 +186,7 @@ textarea::placeholder {
   margin: 5px;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 680px) {
   .contato-box {
     flex-direction: column;
     justify-content: space-between;
@@ -196,9 +210,16 @@ textarea::placeholder {
     width: 100%;
   }
 
-  .coluna input,
-  .coluna textarea {
+  .coluna input {
     padding: 10px;
+    margin: 5px 0;
+  }
+
+  #id-mensagem label {
+    margin-bottom: 10px;
+  }
+
+  .coluna label {
     margin: 5px 0;
   }
 

@@ -143,7 +143,7 @@ class Contato extends Component {
     return (
       <>
         <ReactNotification />
-        <section id="contato" style={mystyle}>
+        <section id="contato" className="linha" style={mystyle}>
           <svg className="top" viewBox="0 0 500 60">
             <polygon points="0,0 500,0 0,60" />
           </svg>
@@ -161,7 +161,7 @@ class Contato extends Component {
                     </div>
                     <div id="id-mensagem" className="coluna">
                       <label id="mensagem" htmlFor="mensagem" aria-label="Como podemos te ajudar" >
-                        <textarea id="mensagem" required name="mensagem" aria-labelledby="mensagem" placeholder="Como podemos te ajudar?" state-type="mensagem" cols="50" rows="11" onChange={this.handleChange} value={mensagem}></textarea>
+                        <textarea id="mensagem" required name="mensagem" aria-labelledby="mensagem" placeholder="Como podemos te ajudar?" state-type="mensagem" cols="50" rows="9" onChange={this.handleChange} value={mensagem}></textarea>
                       </label>
                       {flag ?
                         (<button className="button-contato" type="submit">
