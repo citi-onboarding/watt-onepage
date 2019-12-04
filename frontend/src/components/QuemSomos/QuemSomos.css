@@ -5,19 +5,20 @@
 }
 
 .quemSomos {
-  padding: 150px 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
   margin: 0 auto;
   width: 90%;
+  min-height: 100vh;
   position: relative;
 }
 
 .quemSomos .image {
   width: 50%;
-  height: 290px;
+  height: 70%;
   display: flex;
+  object-fit: cover;
   align-items: center;
   position: absolute;
   right: 0;
@@ -33,11 +34,13 @@
   width: 40%;
   text-align: justify;
   float: left;
+  color: #606164; 
 }
 
 .quemSomos h1 {
   padding-bottom: 50px;
   margin: 0;
+  color: #32417c;
 }
 
 @media(max-width: 1024px) {
@@ -58,10 +61,12 @@
   .quemSomos h1 {
     padding-bottom: 50px;
     margin: 0 auto;
+    text-align: center;
   }
 
-  
-.quemSomos {
-  padding: 14% 0;
-}
+
+  .quemSomos {
+    padding: 14% 0;
+    width: 80%;
+  }
 }

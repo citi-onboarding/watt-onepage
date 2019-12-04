@@ -176,8 +176,8 @@ class Contato extends Component {
 
                       <input required name="assunto" placeholder="Assunto" onChange={this.handleAssuntoChange} value={this.state.assunto} />
                     </div>
-                    <div className="coluna">
-                      <textarea required name="mensagem" placeholder="Como podemos te ajudar?" cols="50" rows="11" onChange={this.handleMesageChange} value={this.state.mensagem}></textarea>
+                    <div id="id-mensagem" className="coluna">
+                      <textarea  required name="mensagem" placeholder="Como podemos te ajudar?" cols="50" rows="9" onChange={this.handleMesageChange} value={this.state.mensagem}></textarea>
                       {this.state.flag ?
                         <button className="button-contato" type="submit">Enviar</button> :
                         <button className="button-contato btn-block" type="submit">
@@ -193,7 +193,6 @@ class Contato extends Component {
                     <div className = "infoContainer" ><img style={smallSpacedIcon} src = {placeIcon}></img> {this.state.address_contato}</div>
                   </div>
                 </form>
-                
                 <button onClick={()=>{window.scrollTo(0,0)}} id="btn-contact" className="btn-contact">
                   <div className="arrow-up"></div>
                 </button>

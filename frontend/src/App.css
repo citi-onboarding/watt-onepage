@@ -1,3 +1,26 @@
+@import url('https://fonts.googleapis.com/css?family=Bebas+Neue|Palanquin&display=swap');
+p {
+  font-family: 'Palanquin', sans-serif;
+  font-size: 19px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+}
+
+h1 {
+  font-family: 'Bebas Neue', cursive;
+  font-size: 50px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.2;
+  letter-spacing: normal;
+  text-align: left;
+  margin: 20px 0;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -7,6 +30,7 @@ html {
   width: 100%;
   height: 100%;
 }
+
 .animation {
   position: fixed;
   width: 100vw;

@@ -13,6 +13,7 @@ svg {
 
 #servicos {
     position: relative;
+    min-height: 100vh;
 }
 
 .bottom {
@@ -23,7 +24,7 @@ svg {
 
 .slide-item {
     width: 100%;
-    height: 450px;
+    height: 400px;
     overflow: hidden;
     outline: none;
     position: relative;
@@ -57,6 +58,7 @@ svg {
 .descricao p {
     margin: 20px 40px;
     margin-top: 100px;
+    font-size: 15px;
 }
 
 .slide-item:hover .descricao {
@@ -74,7 +76,7 @@ svg {
 
 .servicos {
     width: 80%;
-    padding: 50px 0;
+    padding: 40px 0;
     margin: 0 auto;
     background: transparent;
     margin-bottom: 15%;
@@ -169,7 +171,7 @@ svg {
 
     display: block;
     width: 30px;
-    height: 450px;
+    height: 400px;
     padding: 0px;
     -webkit-transform: translate(0, -50%);
     -ms-transform: translate(0, -50%);
@@ -253,5 +255,20 @@ svg {
     .slick-dots li button:before {
         width: 20px;
         height: 10px;
+    }
+
+    .slide-item {
+        height: 400px;
+    }
+
+    .slick-prev,
+    .slick-next {
+        height: 400px;
+    }
+
+    .servicos h1 {
+        margin-bottom: 5%;
+        text-align: center;
+        color: #32417c;
     }
 }
