@@ -33,11 +33,13 @@
   width: 40%;
   text-align: justify;
   float: left;
+  color: #606164; 
 }
 
 .quemSomos h1 {
   padding-bottom: 50px;
   margin: 0;
+  color: #32417c;
 }
 
 @media(max-width: 1024px) {
@@ -60,8 +62,8 @@
     margin: 0 auto;
   }
 
-  
-.quemSomos {
-  padding: 14% 0;
-}
+
+  .quemSomos {
+    padding: 14% 0;
+  }
 }
