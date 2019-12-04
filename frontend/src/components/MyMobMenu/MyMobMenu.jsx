@@ -52,7 +52,6 @@ class MyMobMenu extends Component{
               <div className = "liTable" ><a onClick={()=> {this.handleClickScroll('.servicos');this.animate()}} >SERVIÇOS</a></div>
               <div className = "liTable" ><a onClick={()=> {this.handleClickScroll('.quemSomos');this.animate()}} >QUEM SOMOS</a></div>
               <div className = "liTable" ><a onClick={()=> {this.handleClickScroll('.boxContato');this.animate()}} >CONTATO</a></div>
-              <div className = "liTable" ><a target="_blank" href="http://wattconsultoria.com.br/blog/">BLOG</a></div>
               
             </div>
             
@@ -86,7 +85,6 @@ class MyMobMenu extends Component{
               <div className = "liTable" ><a onClick={()=> {this.handleClickServicos();this.animate()}} >SERVIÇOS</a></div>
               <div className = "liTable" ><a onClick={()=> {this.handleClickSobre();this.animate()}} >SOBRE</a></div>
               <div className = "liTable" ><a onClick={()=> {this.handleClickContato();this.animate()}} >CONTATO</a></div>
-              <div className = "liTable" ><a target="_blank" href="http://wattconsultoria.com.br/blog/">BLOG</a></div>
               
             </div>
             
