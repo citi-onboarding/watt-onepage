@@ -39,7 +39,6 @@ class MyNavBar extends Component {
           <li><a className="mediaDesk" onClick={() => this.handleClickScroll('.servicos')} >SERVIÇOS</a></li>
           <li><a className="mediaDesk" onClick={() => this.handleClickScroll('.quemSomos')} >QUEM SOMOS</a></li>
           <li><a className="mediaDesk" onClick={() => this.handleClickScroll('.boxContato')} >CONTATO</a></li>
-          <li><a className="mediaDesk" target="_blank" href="http://wattconsultoria.com.br/blog/">BLOG</a></li>
 
           <li><div className="littleMargin" ><a className="mediaMob" ><img onClick={() => this.animate()} color="#FFFFFF" src={menuIcon} alt="WATT Consusltoria" height="60" width="60"></img></a></div></li>
 
