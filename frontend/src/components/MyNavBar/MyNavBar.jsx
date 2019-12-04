@@ -6,62 +6,68 @@ import insta from '../../ícones/instagram-(2).png';
 import menuIcon from '../../ícones/menu-24px.svg';
 import WATTLogo from '../../WATTBRANCO.png';
 
+function NavbarItem({ name, classe, escopo }) {
+  return (
+    <li>
+      <button type="button" aria-label={`botão de ir para ${name}`} className="mediaDesk" onClick={() => escopo.handleClickScroll(classe)} >
+        {name}
+      </button>
+    </li>
+  );
+}
+
+
+function Media({ src, link, alt }) {
+  return (
+    <li>
+      <a className="mediaDesk" target="_blank" href={link} rel="noopener noreferrer" >
+        <img className="icons" src={src} alt={alt}></img>
+      </a>
+    </li>
+  );
+}
 class MyNavBar extends Component {
-  constructor(props) {
-    super(props);
-  }
-
-
   handleClickScroll(nameOfClass) {
 
     const elmnt = document.querySelector(nameOfClass);
-    elmnt.scrollIntoView({
-      behavior: "smooth",
-    });
+    elmnt.scrollIntoView();
   }
 
   animate() {
-    if (document.getElementById('toBeAnimated').className == 'animation') {
-      document.getElementById('toBeAnimated').className = 'animationOut';
+    const toBeAnimated = document.getElementById('toBeAnimated');
+    if (toBeAnimated.className === 'animation') {
+      toBeAnimated.className = 'animationOut';
     } else {
-      document.getElementById('toBeAnimated').className = 'animation';
+      toBeAnimated.className = 'animation';
     }
   }
 
   render() {
     return (
-      <div id="navBar" className="navBar" >
+      <nav id="navBar" className="navBar" >
         <div id="logo" className="firstLogo" >
           <img onClick={() => { window.scrollTo(0, 0) }} src={WATTLogo} alt="WATT Consusltoria" height="60" width="60" />
         </div>
         <ul>
 
-          <li><a className="mediaDesk" onClick={() => this.handleClickScroll('.servicos')} >SERVIÇOS</a></li>
-          <li><a className="mediaDesk" onClick={() => this.handleClickScroll('.quemSomos')} >QUEM SOMOS</a></li>
-          <li><a className="mediaDesk" onClick={() => this.handleClickScroll('.boxContato')} >CONTATO</a></li>
-
-          <li><div className="littleMargin" ><a className="mediaMob" ><img onClick={() => this.animate()} color="#FFFFFF" src={menuIcon} alt="WATT Consusltoria" height="60" width="60"></img></a></div></li>
+          <NavbarItem name="SERVIÇOS" classe=".servicos" escopo={this} />
+          <NavbarItem name="QUEM SOMOS" classe=".quemSomos" escopo={this} />
+          <NavbarItem name="CONTATO" classe=".boxContato" escopo={this} />
 
           <li>
-            <a className="mediaDesk" target="_blank" href="https://www.instagram.com/wattconsultoria/" >
-              <img className="icons" src={insta} alt="Instagram"></img>
-            </a>
+            <div className="littleMargin" >
+              <button aria-label="Botão para abrir o menu" type="button" className="mediaMob" >
+                <img onClick={() => this.animate()} color="#FFFFFF" src={menuIcon} alt="WATT Consusltoria" height="60" width="60" />
+              </button>
+            </div>
           </li>
 
-          <li>
-            <a className="mediaDesk" target="_blank" href="https://www.linkedin.com/company/watt-consultoria" >
-              <img className="icons" src={linked} alt="LinkedIn"></img>
-            </a>
-          </li>
-
-          <li>
-            <a className="mediaDesk" target="_blank" href="https://www.facebook.com/WattConsultoria/" >
-              <img className="icons" src={face} alt="Facebook"></img>
-            </a>
-          </li>
+          <Media src={insta} link="https://www.instagram.com/wattconsultoria/" alt="Instagram" />
+          <Media src={linked} link="https://www.linkedin.com/company/watt-consultoria" alt="InstaLinkedIngram" />
+          <Media src={face} link="https://www.facebook.com/WattConsultoria/" alt="Facebook" />
 
         </ul>
-      </div>
+      </nav>
     )
   }
 
