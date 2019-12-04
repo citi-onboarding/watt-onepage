@@ -1,5 +1,6 @@
-  /* aasasasasasasasasasasasasassasasasasasasasasasasasasasassasasasasasasasasasasasasasasasasasasasasasasasasasasasasasasasasasasasasasasasasasasasasasasasasasasasasasasasasasasasasasasasasasasasasassasasasasasaasasasaSASASASASASASASASASASAAASAAASASASASASASASAASSASASASASASASASASASASASASASASASASSASASASASASASASASASASASASASASSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSAASSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSASSSSASASASASASSASSASASASASASSASASASASASASASASASASASASASASASASASASASASASSASAsasasassasaasasasasasasasasasasasasasasasasasasasaasasaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaasssassasaassasaasassasasassasaassassasassasasasasasasasasasasasasasasasasasasasasasasasasasasasasaasasasasasasasasasasasasasasasasasasasasasassqwqwqwqwqwqwqwqwqwqwqwqwqwqwqwqwwqwqwqwqwqwqwqwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwqwqwqwqwqqqqqqqqqqqqqwqwqwqwqwqwqwqwqwqwwqwqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqwqwqwqwqwqwqwqwwwqqeqweqeqqweweqqwwqqwwqwweewewwewewewewewewewewewewewwewewewwewwwwwwwqwwwqqwqwqqqwqwqwqqwqwqwqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqwqqqwqwqwqwqwqwqwqwqwqwqwqwqwqwqwqwqwqwqwqwqwqwqwqwqwqwqwqwqwqwqwqwqwqwqwqwqwqwqwqwqwqwqwqwqwqwqwwqwqqwqwqwqwqwqwqwqwqwqwqwqwqwwqwqwqwqwqwqwqwqwqwqwqwqwqwqwqwqwqwqwqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwqwqwqwqwqw */
-.mobMenu{
+@import url('https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap');
+
+.mobMenu {
     width: 100vw;
     height: 100vh;
     display: flex;
@@ -12,29 +13,30 @@
     object-fit: contain;
     z-index: 2;
 }
-.logoLandscape{
+
+.logoLandscape {
     margin-left: 15px;
 }
-.casePortrait{
-    
-}
-.caseLandscape{
-    
-}
-.buttonWrapper{
+
+.buttonWrapper {
     display: flex;
     justify-content: flex-end;
     position: fixed;
     width: 100vw;
     z-index: 3;
 }
-.fixedMobButton{
+
+.fixedMobButton {
     position: relative;
     display: flex;
     justify-content: flex-end;
     margin-right: 15px;
     margin-top: 18px;
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
 }
+
 .ulTable {
     margin-top: 15vh;
     margin-bottom: 15vh;
@@ -45,20 +47,36 @@
     font-size: 2.7rem;
     padding-inline-start: 0;
 }
+
 .liTable {
     margin-top: 0.5vh;
     margin-bottom: 0.5vh;
 }
-.liTable a{
-    color:  #ECEDED;
+
+.liTable button{
+    background: transparent;
+    border: none;
+    color: #ECEDED;
+    
+    font-family: 'Bebas Neue', cursive;
+    font-size: 40px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.22;
+    letter-spacing: normal;
+    text-align: left;
+    
     text-decoration: none;
     text-align: center;
     cursor: pointer;
 }
-.firstMobLogo{
+
+.firstMobLogo {
     margin-top: 8vh;
 }
-.mobIcons{
+
+.mobIcons {
     color: white;
     width: 50px;
     height: 50px;
@@ -66,61 +84,85 @@
     margin-right: 5vw;
     margin-left: 5vw;
 }
-.iconTable{
+
+.iconTable {
     display: flex;
     justify-content: space-between;
     padding-bottom: 30px;
 }
+
+
 @media only screen and (max-width: 768px) {
+
     /* For mobile phones: */
-    .mediaMob{
-        
-    }
-    .mediaDesk{
+
+    .mediaDesk {
         display: none;
     }
+
+    .iconTable li {
+        list-style: none;
+    }
 }
+
 @media only screen and (orientation: portrait) {
+
     /* For mobile phones: */
-    .mediaMob{
-        
-    }
-    .mediaDesk{
+
+    .mediaDesk {
         display: none;
     }
+
+    .iconTable li {
+        list-style: none;
+    }
+
 }
+
 @media only screen and (max-height: 550px) and (orientation:landscape) {
+
     /* For mobile phones: */
-    .mediaMob{
-        
-    }
-    .mediaDesk{
+
+    .mediaDesk {
         display: none;
     }
-    .casePortrait{
+
+    .casePortrait {
         display: none;
     }
-    .caseLandscape{
-        
+
+    .firstMobLogo button {
+        background: transparent;
+        border: 0;
+        cursor: pointer;
+        outline: none;
     }
-    .buttonWrapper{
+
+    .buttonWrapper {
         justify-content: space-between;
     }
-    .ulTable{
+
+    .ulTable {
         width: 90vw;
         margin-top: 33vh;
         justify-content: space-around;
         flex-direction: initial;
     }
+
+    .iconTable li {
+        list-style: none;
+    }
 }
 
-@media only screen and (min-height: 550px) and (min-width: 769px)  {
+@media only screen and (min-height: 550px) and (min-width: 769px) {
+
     /* For desktop: */
-    .mediaMob{      
+    .mediaMob {
         display: none;
     }
-    .mediaDesk{
-    
+
+    .iconTable li {
+        list-style: none;
     }
 
 }
