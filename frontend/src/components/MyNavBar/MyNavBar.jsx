@@ -14,7 +14,7 @@ class MyNavBar extends Component {
 
   handleClickScroll(nameOfClass) {
 
-    let elmnt = document.querySelector(nameOfClass);
+    const elmnt = document.querySelector(nameOfClass);
     elmnt.scrollIntoView({
       behavior: "smooth",
     });
