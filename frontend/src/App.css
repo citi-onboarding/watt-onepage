@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Bebas+Neue|Palanquin&display=swap');
 p {
   font-family: 'Palanquin', sans-serif;
-  /* font-size: 26px; */
+  font-size: 19px;
   font-weight: bold;
   font-stretch: normal;
   font-style: normal;
@@ -11,7 +11,7 @@ p {
 
 h1 {
   font-family: 'Bebas Neue', cursive;
-  font-size: 70px;
+  font-size: 50px;
   font-weight: normal;
   font-stretch: normal;
   font-style: normal;

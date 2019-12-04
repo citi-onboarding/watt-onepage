@@ -13,6 +13,7 @@ svg {
 
 #servicos {
     position: relative;
+    min-height: 100vh;
 }
 
 .bottom {
@@ -57,6 +58,7 @@ svg {
 .descricao p {
     margin: 20px 40px;
     margin-top: 100px;
+    font-size: 15px;
 }
 
 .slide-item:hover .descricao {
@@ -262,5 +264,11 @@ svg {
     .slick-prev,
     .slick-next {
         height: 400px;
+    }
+
+    .servicos h1 {
+        margin-bottom: 5%;
+        text-align: center;
+        color: #32417c;
     }
 }
