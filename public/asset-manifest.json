@@ -1,21 +1,20 @@
 {
   "files": {
     "main.css": "/static/css/main.92963640.chunk.css",
-    "main.js": "/static/js/main.1eec57b5.chunk.js",
-    "main.js.map": "/static/js/main.1eec57b5.chunk.js.map",
+    "main.js": "/static/js/main.83233827.chunk.js",
+    "main.js.map": "/static/js/main.83233827.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.baeb1881.js",
     "runtime-main.js.map": "/static/js/runtime-main.baeb1881.js.map",
     "static/css/2.986bb682.chunk.css": "/static/css/2.986bb682.chunk.css",
     "static/js/2.f6705d29.chunk.js": "/static/js/2.f6705d29.chunk.js",
     "static/js/2.f6705d29.chunk.js.map": "/static/js/2.f6705d29.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.18ccc11fd48c8fa1f9c5fd733e2436dd.js": "/precache-manifest.18ccc11fd48c8fa1f9c5fd733e2436dd.js",
+    "precache-manifest.4f0f181680376b8a783eefbb992cd4ae.js": "/precache-manifest.4f0f181680376b8a783eefbb992cd4ae.js",
     "service-worker.js": "/service-worker.js",
     "static/css/2.986bb682.chunk.css.map": "/static/css/2.986bb682.chunk.css.map",
     "static/css/main.92963640.chunk.css.map": "/static/css/main.92963640.chunk.css.map",
     "static/media/CITi.png": "/static/media/CITi.a764f0c0.png",
     "static/media/Logo_watt.png": "/static/media/Logo_watt.e7f4e7b2.png",
-    "static/media/Logo_watt_consultoria_vetorizada_BRANCA.png": "/static/media/Logo_watt_consultoria_vetorizada_BRANCA.b974839b.png",
     "static/media/WATTBRANCO.png": "/static/media/WATTBRANCO.007a945d.png",
     "static/media/clear-24px.svg": "/static/media/clear-24px.63442602.svg",
     "static/media/code.svg": "/static/media/code.602a4f56.svg",
@@ -33,6 +32,6 @@
     "static/css/2.986bb682.chunk.css",
     "static/js/2.f6705d29.chunk.js",
     "static/css/main.92963640.chunk.css",
-    "static/js/main.1eec57b5.chunk.js"
+    "static/js/main.83233827.chunk.js"
   ]
 }

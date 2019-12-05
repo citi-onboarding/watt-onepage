@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "c1bd9a0afb20671d0ea0f1d5d24edfdd",
+    "revision": "5a439d581f5c1211140909fb8ef18c18",
     "url": "/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/css/2.986bb682.chunk.css"
   },
   {
-    "revision": "a4a3a268a733b5e10b85",
+    "revision": "7eba4851d6f1c228ee01",
     "url": "/static/css/main.92963640.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/js/2.f6705d29.chunk.js"
   },
   {
-    "revision": "a4a3a268a733b5e10b85",
-    "url": "/static/js/main.1eec57b5.chunk.js"
+    "revision": "7eba4851d6f1c228ee01",
+    "url": "/static/js/main.83233827.chunk.js"
   },
   {
     "revision": "9aabb23bcbd2c9e69d36",
@@ -30,10 +30,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "e7f4e7b200abd803ff0fe11caa5c5781",
     "url": "/static/media/Logo_watt.e7f4e7b2.png"
-  },
-  {
-    "revision": "b974839bc7d58728724f34e61c4b7959",
-    "url": "/static/media/Logo_watt_consultoria_vetorizada_BRANCA.b974839b.png"
   },
   {
     "revision": "007a945d858b6fd686286a51feac8162",
