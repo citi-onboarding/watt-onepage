@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import './MyNavBar.css';
-import face from '../../ícones/facebook.png';
-import linked from '../../ícones/linkedin-(1).png';
-import insta from '../../ícones/instagram-(2).png';
+import face from '../../ícones/facebook.webp';
+import linked from '../../ícones/linkedin-(1).webp';
+import insta from '../../ícones/instagram-(2).webp';
 import menuIcon from '../../ícones/menu-24px.svg';
-import WATTLogo from '../../WATTBRANCO.png';
+import WATTLogo from '../../WATTBRANCO.webp';
 
 function NavbarItem({ name, classe, escopo }) {
   return (

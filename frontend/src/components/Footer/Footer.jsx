@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import heart from './heart.svg';
 import code from './code.svg';
-import CITi from './CITi.png';
+import CITi from './CITi.webp';
 import './Footer.css';
 
 function Footer() {

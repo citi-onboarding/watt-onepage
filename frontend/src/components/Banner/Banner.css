@@ -8,7 +8,8 @@
 }
 
 .banner img {
-  width: 40%;
+  width: 80%;
+  max-width: 450px;
   margin: 0 auto;
 }
 
@@ -36,11 +37,4 @@
   -webkit-transform: rotate(-135deg);
   transform: rotate(-135deg);
   color: #606164;
-}
-
-@media(max-width: 1000px) {
-  .banner img {
-    width: 80%;
-  }
-
 }

@@ -1,5 +1,5 @@
 import React  from 'react';
-import logo_watt from './Logo_watt.png'
+import logo_watt from './Logo_watt.webp';
 import './Banner.css';
 
 function Banner() {

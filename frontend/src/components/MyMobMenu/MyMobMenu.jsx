@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import './MyMobMenu.css';
-import face from '../../ícones/facebook.png';
-import linked from '../../ícones/linkedin-(1).png';
-import insta from '../../ícones/instagram-(2).png';
+import face from '../../ícones/facebook.webp';
+import linked from '../../ícones/linkedin-(1).webp';
+import insta from '../../ícones/instagram-(2).webp';
 import xIcon from '../../ícones/clear-24px.svg';
-import WATTLogoVetor from '../../ícones/Logo_watt_consultoria_vetorizada_BRANCA.png';
+import WATTLogoVetor from '../../ícones/Logo_watt_consultoria_vetorizada_BRANCA.webp';
 
 function NavbarItem({ name, classe, escopo }) {
   return (
