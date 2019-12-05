@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "5a439d581f5c1211140909fb8ef18c18",
+    "revision": "2d629ae50495bd741ee1f2549f4120b9",
     "url": "/index.html"
   },
   {
@@ -8,32 +8,36 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/css/2.986bb682.chunk.css"
   },
   {
-    "revision": "7eba4851d6f1c228ee01",
-    "url": "/static/css/main.92963640.chunk.css"
+    "revision": "34ebb4d66539278cd306",
+    "url": "/static/css/main.08a90f12.chunk.css"
   },
   {
     "revision": "1d75f725b46594467d5f",
     "url": "/static/js/2.f6705d29.chunk.js"
   },
   {
-    "revision": "7eba4851d6f1c228ee01",
-    "url": "/static/js/main.83233827.chunk.js"
+    "revision": "34ebb4d66539278cd306",
+    "url": "/static/js/main.e52a52df.chunk.js"
   },
   {
     "revision": "9aabb23bcbd2c9e69d36",
     "url": "/static/js/runtime-main.baeb1881.js"
   },
   {
-    "revision": "a764f0c09dba0c69f43336e48615ab1e",
-    "url": "/static/media/CITi.a764f0c0.png"
+    "revision": "02dfe73631bd4b7c5f579621f8952595",
+    "url": "/static/media/CITi.02dfe736.webp"
   },
   {
-    "revision": "e7f4e7b200abd803ff0fe11caa5c5781",
-    "url": "/static/media/Logo_watt.e7f4e7b2.png"
+    "revision": "2bdc6eee106483a7a9ad0961323c214b",
+    "url": "/static/media/Logo_watt.2bdc6eee.webp"
   },
   {
-    "revision": "007a945d858b6fd686286a51feac8162",
-    "url": "/static/media/WATTBRANCO.007a945d.png"
+    "revision": "8ee555fd14d3d2d9a7a907492d82b994",
+    "url": "/static/media/Logo_watt_consultoria_vetorizada_BRANCA.8ee555fd.webp"
+  },
+  {
+    "revision": "969913bdbb41f68675f82a1ea87a3a8b",
+    "url": "/static/media/WATTBRANCO.969913bd.webp"
   },
   {
     "revision": "634426025911ec1af91b63a182a9bb2b",
@@ -48,16 +52,24 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/envelope.3101fb3d.svg"
   },
   {
+    "revision": "0d972ad9dd2cb1391529e6aeb4377582",
+    "url": "/static/media/facebook.0d972ad9.webp"
+  },
+  {
     "revision": "c4835487aa65f37c1c034d3f8632b39e",
     "url": "/static/media/heart.c4835487.svg"
   },
   {
-    "revision": "c242ff6f28eeb2a62d047bc6391602e2",
-    "url": "/static/media/instagram-(2).c242ff6f.png"
+    "revision": "e12f27eb2e7561b750b11e6ca514f5e2",
+    "url": "/static/media/instagram-(2).e12f27eb.webp"
   },
   {
     "revision": "b5e2fc9c67b52c0b7489b0fe7de49f1d",
     "url": "/static/media/instagram-logo.b5e2fc9c.svg"
+  },
+  {
+    "revision": "191052d492f51578b6f5f3ff2199e66d",
+    "url": "/static/media/linkedin-(1).191052d4.webp"
   },
   {
     "revision": "4aefdbb677f62d874e828f6015d394ea",
