@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/static/css/main.e58ef902.chunk.css",
-    "main.js": "/static/js/main.12aeac06.chunk.js",
-    "main.js.map": "/static/js/main.12aeac06.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.0fda84ed.js",
-    "runtime-main.js.map": "/static/js/runtime-main.0fda84ed.js.map",
+    "main.css": "/static/css/main.92963640.chunk.css",
+    "main.js": "/static/js/main.78829ea8.chunk.js",
+    "main.js.map": "/static/js/main.78829ea8.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.baeb1881.js",
+    "runtime-main.js.map": "/static/js/runtime-main.baeb1881.js.map",
     "static/css/2.986bb682.chunk.css": "/static/css/2.986bb682.chunk.css",
-    "static/js/2.d0051127.chunk.js": "/static/js/2.d0051127.chunk.js",
-    "static/js/2.d0051127.chunk.js.map": "/static/js/2.d0051127.chunk.js.map",
+    "static/js/2.f6705d29.chunk.js": "/static/js/2.f6705d29.chunk.js",
+    "static/js/2.f6705d29.chunk.js.map": "/static/js/2.f6705d29.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.a742e44941e16175f745c0be93272bed.js": "/precache-manifest.a742e44941e16175f745c0be93272bed.js",
+    "precache-manifest.402d49ea4b5eda226ee8e0bf1d4a28ef.js": "/precache-manifest.402d49ea4b5eda226ee8e0bf1d4a28ef.js",
     "service-worker.js": "/service-worker.js",
     "static/css/2.986bb682.chunk.css.map": "/static/css/2.986bb682.chunk.css.map",
-    "static/css/main.e58ef902.chunk.css.map": "/static/css/main.e58ef902.chunk.css.map",
+    "static/css/main.92963640.chunk.css.map": "/static/css/main.92963640.chunk.css.map",
     "static/media/CITi.png": "/static/media/CITi.a764f0c0.png",
     "static/media/Logo_watt.png": "/static/media/Logo_watt.e7f4e7b2.png",
     "static/media/Logo_watt_consultoria_vetorizada_BRANCA.png": "/static/media/Logo_watt_consultoria_vetorizada_BRANCA.b974839b.png",
@@ -22,18 +22,17 @@
     "static/media/envelope.svg": "/static/media/envelope.3101fb3d.svg",
     "static/media/heart.svg": "/static/media/heart.c4835487.svg",
     "static/media/instagram-(2).png": "/static/media/instagram-(2).c242ff6f.png",
-    "static/media/instagram-logo.svg": "/static/media/instagram-logo.5ccd53e5.svg",
-    "static/media/lemur-eKFsacaWzOg-unsplash (1).jpg": "/static/media/lemur-eKFsacaWzOg-unsplash (1).fa4da284.jpg",
-    "static/media/menu-24px.svg": "/static/media/menu-24px.b911578d.svg",
+    "static/media/instagram-logo.svg": "/static/media/instagram-logo.b5e2fc9c.svg",
+    "static/media/menu-24px.svg": "/static/media/menu-24px.4aefdbb6.svg",
     "static/media/phone-call.svg": "/static/media/phone-call.871e8c41.svg",
     "static/media/place.svg": "/static/media/place.cdfd44f1.svg",
     "static/media/slick-theme.css": "/static/media/slick.f97e3bbf.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.0fda84ed.js",
+    "static/js/runtime-main.baeb1881.js",
     "static/css/2.986bb682.chunk.css",
-    "static/js/2.d0051127.chunk.js",
-    "static/css/main.e58ef902.chunk.css",
-    "static/js/main.12aeac06.chunk.js"
+    "static/js/2.f6705d29.chunk.js",
+    "static/css/main.92963640.chunk.css",
+    "static/js/main.78829ea8.chunk.js"
   ]
 }

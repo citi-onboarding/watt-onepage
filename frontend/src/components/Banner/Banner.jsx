@@ -1,7 +1,6 @@
-import React, { Component } from 'react';
+import React  from 'react';
 import logo_watt from './Logo_watt.png'
-import './Banner.css'
-import { func } from 'prop-types';
+import './Banner.css';
 
 function Banner() {
   const handleClickScroll = () => {

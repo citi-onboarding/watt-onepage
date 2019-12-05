@@ -3,7 +3,6 @@ import './MyMobMenu.css';
 import face from '../../ícones/facebook.png';
 import linked from '../../ícones/linkedin-(1).png';
 import insta from '../../ícones/instagram-(2).png';
-import menuIcon from '../../ícones/menu-24px.svg';
 import xIcon from '../../ícones/clear-24px.svg';
 import WATTLogoVetor from '../../ícones/Logo_watt_consultoria_vetorizada_BRANCA.png';
 

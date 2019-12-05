@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "1c30cac8eecf6948275ff64412f8c5f5",
+    "revision": "3d48e05e8fb44604a4f6941dc8a357a6",
     "url": "/index.html"
   },
   {
-    "revision": "c80a93d2ebcca1d4b4f0",
+    "revision": "1d75f725b46594467d5f",
     "url": "/static/css/2.986bb682.chunk.css"
   },
   {
-    "revision": "6fc65b714cd64da79041",
-    "url": "/static/css/main.e58ef902.chunk.css"
+    "revision": "b71bbb3bce270741375b",
+    "url": "/static/css/main.92963640.chunk.css"
   },
   {
-    "revision": "c80a93d2ebcca1d4b4f0",
-    "url": "/static/js/2.d0051127.chunk.js"
+    "revision": "1d75f725b46594467d5f",
+    "url": "/static/js/2.f6705d29.chunk.js"
   },
   {
-    "revision": "6fc65b714cd64da79041",
-    "url": "/static/js/main.12aeac06.chunk.js"
+    "revision": "b71bbb3bce270741375b",
+    "url": "/static/js/main.78829ea8.chunk.js"
   },
   {
-    "revision": "aa5dd861c3df341bfb4f",
-    "url": "/static/js/runtime-main.0fda84ed.js"
+    "revision": "9aabb23bcbd2c9e69d36",
+    "url": "/static/js/runtime-main.baeb1881.js"
   },
   {
     "revision": "a764f0c09dba0c69f43336e48615ab1e",
@@ -60,16 +60,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/instagram-(2).c242ff6f.png"
   },
   {
-    "revision": "5ccd53e5e29be810742350aa35a3042e",
-    "url": "/static/media/instagram-logo.5ccd53e5.svg"
+    "revision": "b5e2fc9c67b52c0b7489b0fe7de49f1d",
+    "url": "/static/media/instagram-logo.b5e2fc9c.svg"
   },
   {
-    "revision": "fa4da284c836294bf25bd953983470a1",
-    "url": "/static/media/lemur-eKFsacaWzOg-unsplash (1).fa4da284.jpg"
-  },
-  {
-    "revision": "b911578d45997c4a6fce695650f7f939",
-    "url": "/static/media/menu-24px.b911578d.svg"
+    "revision": "4aefdbb677f62d874e828f6015d394ea",
+    "url": "/static/media/menu-24px.4aefdbb6.svg"
   },
   {
     "revision": "871e8c411d629f429705e18a13c4c4ef",
