@@ -100,7 +100,7 @@ class Contato extends Component {
           message: 'Tente novamente mais tarde',
           type: 'danger',
         };
-      store.addNotification(...notificationsBase, ...notification);
+      store.addNotification({...notificationsBase, ...notification});
     };
 
     (async () => {
@@ -161,7 +161,7 @@ class Contato extends Component {
                     </div>
                     <div id="id-mensagem" className="coluna">
                       <label id="mensagem" htmlFor="mensagem" aria-label="Como podemos te ajudar" >
-                        <textarea id="mensagem" required name="mensagem" aria-labelledby="mensagem" placeholder="Como podemos te ajudar?" state-type="mensagem" cols="50" rows="9" onChange={this.handleChange} value={mensagem}></textarea>
+                        <textarea id="mensagem" required name="mensagem" aria-labelledby="mensagem" placeholder="Como podemos te ajudar?" state-type="mensagem" cols="50" rows="7" onChange={this.handleChange} value={mensagem}></textarea>
                       </label>
                       {flag ?
                         (<button className="button-contato" type="submit">

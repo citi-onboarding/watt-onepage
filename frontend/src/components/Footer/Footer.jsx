@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import heart from './heart.svg';
 import code from './code.svg';
 import CITi from './CITi.png';

@@ -43,9 +43,52 @@ Site para a Empresa Júnior WATT produzido no PS 2019.2
    <br><br>`hotfix/<nome-da branch>: <descrição>`<br><br>
 3. Envie um pull request para a branch `development`.
 
+## Descrição geral do software
+
+### Componentes
+
+  #### Contato
+    Faz requisição para /contato com o método POST a fim de enviar o email com os dados que usuário entra nos campos de input. Além disso, Faz requisição para /contato com o método GET e recebe o endereço, o email, a media social, o número e o background.
+
+  #### Servicos
+    Faz requisição para /servicos com o método GET e recebe o endereço, o email, a media social, o número e o background. os serviços que estão no carrousel.
+
+  #### Banner
+     Faz requisição para /banner com o método GET e recebe o endereço, o background do banner
+
+  #### QuemSomos
+    Faz requisição para /banner com o método GET e recebe o texto e a foto da aba "Quem Somos".
+
+  #### Footer
+    Não faz requisições, exibe no rodapé do site a autoria.
+
+  #### MyMobMenu
+    Não faz requisições, exibe o menu de navegação do site para dispositivos móveis.
+
+  #### MyNavBar
+    Não faz requisições, exibe o menu de navegação do site para Desktop.
+
+### Endpoints
+
+  #### /contato - GET
+    Envia o endereço, o email, a media social, o número e o background que fica na parte de contato do site.
+
+  #### /contato - POST
+    Envia o email com os dados que recebe no front-end (email, nome, mensagem e número).
+
+  #### /servicos
+    Envia os serviços que estão no carrousel.
+
+  #### /banner
+    Envia o background do banner
+
+  #### /quemsomos
+    Envia o texto e a foto da aba "Quem Somos".
+
 ## Autores
 
 * **Edgar Marques** - [Jorrmungandr](https://github.com/Jorrmungandr)
 * **Gabriel Kristian** - [gkqsj](https://github.com/gkqsj)
 * **Luana Nagai** - [nagailuana](https://www.behance.net/user/?username=nagailuana)
 * **Vituriano Xisto** - [Vituriano](https://github.com/Vituriano)
+
