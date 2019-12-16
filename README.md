@@ -47,43 +47,68 @@ Site para a Empresa Júnior WATT produzido no PS 2019.2
 
 ### Componentes
 
-  #### Contato
-    Faz requisição para /contato com o método POST a fim de enviar o email com os dados que usuário entra nos campos de input. Além disso, Faz requisição para /contato com o método GET e recebe o endereço, o email, a media social, o número e o background.
+  #### 1. Contato
 
-  #### Servicos
-    Faz requisição para /servicos com o método GET e recebe o endereço, o email, a media social, o número e o background. os serviços que estão no carrousel.
 
-  #### Banner
-     Faz requisição para /banner com o método GET e recebe o endereço, o background do banner
+  <p align="justify">
+  Faz requisição para /contato com o método POST a fim de enviar o email com os dados que usuário entra nos campos de input. Além disso, Faz requisição para /contato com o método GET e recebe o endereço, o email, a media social, o número e o background.
+  <p/>
 
-  #### QuemSomos
-    Faz requisição para /banner com o método GET e recebe o texto e a foto da aba "Quem Somos".
+  #### 2. Servicos
+  <p align="justify">
+  Faz requisição para /servicos com o método GET e recebe o endereço, o email, a media social, o número e o background. os serviços que estão no carrousel.
+  <p/>
 
-  #### Footer
-    Não faz requisições, exibe no rodapé do site a autoria.
+  #### 3. Banner
+  <p align="justify">
+  Faz requisição para /banner com o método GET e recebe o endereço, o background do banner
+  <p/>
 
-  #### MyMobMenu
-    Não faz requisições, exibe o menu de navegação do site para dispositivos móveis.
+  #### 4. QuemSomos
+  <p align="justify">
+  Faz requisição para /banner com o método GET e recebe o texto e a foto da aba "Quem Somos".
+  <p/>
 
-  #### MyNavBar
-    Não faz requisições, exibe o menu de navegação do site para Desktop.
+  #### 5. Footer
+  <p align="justify">
+  Não faz requisições, exibe no rodapé do site a autoria.
+  <p/>
+
+  #### 6. MyMobMenu
+  <p align="justify">
+  Não faz requisições, exibe o menu de navegação do site para dispositivos móveis.
+  <p/>
+
+  #### 7. MyNavBar
+  <p align="justify">
+  Não faz requisições, exibe o menu de navegação do site para Desktop.
+  <p/>
 
 ### Endpoints
 
-  #### /contato - GET
-    Envia o endereço, o email, a media social, o número e o background que fica na parte de contato do site.
+  #### 1. /contato - GET
+  <p align="justify">
+  Envia o endereço, o email, a media social, o número e o background que fica na parte de contato do site.
+  <p/>
 
-  #### /contato - POST
-    Envia o email com os dados que recebe no front-end (email, nome, mensagem e número).
+  #### 2. /contato - POST
+  <p align="justify">
+  Envia o email com os dados que recebe no front-end (email, nome, mensagem e número).
+  <p/>
 
-  #### /servicos
-    Envia os serviços que estão no carrousel.
+  #### 3. /servicos - GET
+  <p align="justify">
+  Envia os serviços que estão no carrousel.
+  <p/>
 
-  #### /banner
-    Envia o background do banner
+  #### 4. /banner - GET
+  <p align="justify">
+  Envia o background do banner
+  <p/>
 
-  #### /quemsomos
-    Envia o texto e a foto da aba "Quem Somos".
+  #### 5. /quemsomos - GET
+  <p align="justify">
+  Envia o texto e a foto da aba "Quem Somos".
 
 ## Autores
 
