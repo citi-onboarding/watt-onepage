@@ -33,7 +33,7 @@ exports = module.exports = function (app) {
 
 		const transporter = nodemailer.createTransport({
 			service: "gmail",
-			port: 587,
+			port: 465,
 			secure: false,
 			auth: {
 				user: "desafiopta@gmail.com",
@@ -52,7 +52,7 @@ exports = module.exports = function (app) {
 		transporter.sendMail(mailOptions, function (error) {
 			if (error) {
 				console.log(error)
-				res.send(error)
+				res.status(500).send(error)
 			} else {
 				console.log('Email enviado');
 				res.send('Enviado')
