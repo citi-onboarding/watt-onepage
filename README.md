@@ -43,9 +43,77 @@ Site para a Empresa Júnior WATT produzido no PS 2019.2
    <br><br>`hotfix/<nome-da branch>: <descrição>`<br><br>
 3. Envie um pull request para a branch `development`.
 
+## Descrição geral do software
+
+### Componentes
+
+  #### 1. Contato
+
+
+  <p align="justify">
+  Faz requisição para /contato com o método POST a fim de enviar o email com os dados que usuário entra nos campos de input. Além disso, Faz requisição para /contato com o método GET e recebe o endereço, o email, a media social, o número e o background.
+  <p/>
+
+  #### 2. Servicos
+  <p align="justify">
+  Faz requisição para /servicos com o método GET e recebe o endereço, o email, a media social, o número e o background. os serviços que estão no carrousel.
+  <p/>
+
+  #### 3. Banner
+  <p align="justify">
+  Faz requisição para /banner com o método GET e recebe o endereço, o background do banner
+  <p/>
+
+  #### 4. QuemSomos
+  <p align="justify">
+  Faz requisição para /banner com o método GET e recebe o texto e a foto da aba "Quem Somos".
+  <p/>
+
+  #### 5. Footer
+  <p align="justify">
+  Não faz requisições, exibe no rodapé do site a autoria.
+  <p/>
+
+  #### 6. MyMobMenu
+  <p align="justify">
+  Não faz requisições, exibe o menu de navegação do site para dispositivos móveis.
+  <p/>
+
+  #### 7. MyNavBar
+  <p align="justify">
+  Não faz requisições, exibe o menu de navegação do site para Desktop.
+  <p/>
+
+### Endpoints
+
+  #### 1. /contato - GET
+  <p align="justify">
+  Envia o endereço, o email, a media social, o número e o background que fica na parte de contato do site.
+  <p/>
+
+  #### 2. /contato - POST
+  <p align="justify">
+  Envia o email com os dados que recebe no front-end (email, nome, mensagem e número).
+  <p/>
+
+  #### 3. /servicos - GET
+  <p align="justify">
+  Envia os serviços que estão no carrousel.
+  <p/>
+
+  #### 4. /banner - GET
+  <p align="justify">
+  Envia o background do banner
+  <p/>
+
+  #### 5. /quemsomos - GET
+  <p align="justify">
+  Envia o texto e a foto da aba "Quem Somos".
+
 ## Autores
 
 * **Edgar Marques** - [Jorrmungandr](https://github.com/Jorrmungandr)
 * **Gabriel Kristian** - [gkqsj](https://github.com/gkqsj)
 * **Luana Nagai** - [nagailuana](https://www.behance.net/user/?username=nagailuana)
 * **Vituriano Xisto** - [Vituriano](https://github.com/Vituriano)
+
