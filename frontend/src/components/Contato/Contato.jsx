@@ -17,6 +17,7 @@ function InputLabel({ nome, placeholder, type, escopo, value, ariaLabel }) {
     </label>
   );
 }
+
 function InfoContainer({ src, content, alt }) {
   return (
     <li className="infoContainer" >
