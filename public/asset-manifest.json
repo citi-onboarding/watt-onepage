@@ -1,18 +1,19 @@
 {
   "files": {
-    "main.css": "/static/css/main.e58ef902.chunk.css",
-    "main.js": "/static/js/main.12aeac06.chunk.js",
-    "main.js.map": "/static/js/main.12aeac06.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.0fda84ed.js",
-    "runtime-main.js.map": "/static/js/runtime-main.0fda84ed.js.map",
-    "static/css/2.986bb682.chunk.css": "/static/css/2.986bb682.chunk.css",
-    "static/js/2.d0051127.chunk.js": "/static/js/2.d0051127.chunk.js",
-    "static/js/2.d0051127.chunk.js.map": "/static/js/2.d0051127.chunk.js.map",
+    "main.css": "/static/css/main.3576c0e4.chunk.css",
+    "main.js": "/static/js/main.54a565a9.chunk.js",
+    "main.js.map": "/static/js/main.54a565a9.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.1c2d59f4.js",
+    "runtime-main.js.map": "/static/js/runtime-main.1c2d59f4.js.map",
+    "static/css/2.9826a6e9.chunk.css": "/static/css/2.9826a6e9.chunk.css",
+    "static/js/2.0264ac54.chunk.js": "/static/js/2.0264ac54.chunk.js",
+    "static/js/2.0264ac54.chunk.js.map": "/static/js/2.0264ac54.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.a742e44941e16175f745c0be93272bed.js": "/precache-manifest.a742e44941e16175f745c0be93272bed.js",
+    "precache-manifest.a47b6af6f1e51daf8586073807d34d63.js": "/precache-manifest.a47b6af6f1e51daf8586073807d34d63.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/2.986bb682.chunk.css.map": "/static/css/2.986bb682.chunk.css.map",
-    "static/css/main.e58ef902.chunk.css.map": "/static/css/main.e58ef902.chunk.css.map",
+    "static/css/2.9826a6e9.chunk.css.map": "/static/css/2.9826a6e9.chunk.css.map",
+    "static/css/main.3576c0e4.chunk.css.map": "/static/css/main.3576c0e4.chunk.css.map",
+    "static/js/2.0264ac54.chunk.js.LICENSE.txt": "/static/js/2.0264ac54.chunk.js.LICENSE.txt",
     "static/media/CITi.png": "/static/media/CITi.a764f0c0.png",
     "static/media/Logo_watt.png": "/static/media/Logo_watt.e7f4e7b2.png",
     "static/media/Logo_watt_consultoria_vetorizada_BRANCA.png": "/static/media/Logo_watt_consultoria_vetorizada_BRANCA.b974839b.png",
@@ -30,10 +31,10 @@
     "static/media/slick-theme.css": "/static/media/slick.f97e3bbf.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.0fda84ed.js",
-    "static/css/2.986bb682.chunk.css",
-    "static/js/2.d0051127.chunk.js",
-    "static/css/main.e58ef902.chunk.css",
-    "static/js/main.12aeac06.chunk.js"
+    "static/js/runtime-main.1c2d59f4.js",
+    "static/css/2.9826a6e9.chunk.css",
+    "static/js/2.0264ac54.chunk.js",
+    "static/css/main.3576c0e4.chunk.css",
+    "static/js/main.54a565a9.chunk.js"
   ]
 }
